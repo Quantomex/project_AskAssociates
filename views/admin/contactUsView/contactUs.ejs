@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us Submissions</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/OpForm.css">
+</head>
+<body>
+<div class="container">
+  <% if (contactUsSubmissions.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <a style="margin-top: 20px;" href="/contactUs"><button>Back</button></a>    
+          <th>Submissions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% contactUsSubmissions.forEach((submission, index) => { %>
+        <tr>
+          <td><strong>Submission <%= index + 1 %></strong></td>
+        </tr>
+        <tr>
+          <td><strong>Full Name:</strong> <%= submission.fullName %></td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong> <%= submission.email %></td>
+        </tr>
+        <tr>
+          <td><strong>Phone:</strong> <%= submission.phone %></td>
+        </tr>
+        <tr>
+          <td><strong>Message:</strong> <%= submission.message %></td>
+        </tr>
+        <tr>
+          <td><strong>Date and Time:</strong> <%= submission.date.toLocaleString() %></td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/deleteContactUs/<%= submission._id %>" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+  <p>No Contact Us submissions available.</p>
+  <% } %>
+</div>
+</body>
+</html>
