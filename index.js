@@ -5,10 +5,12 @@ if (process.env.NODE_ENV !== "production") {
 require('./models/Admin');
 require('./models/faqModel');
 require('./models/contactUsModel');
+require('./models/blogModel');
+
 const express = require("express");
 const MongoDBStore = require("connect-mongo");
 const mongoose = require("mongoose");
-// const multer = require("multer");
+const multer = require("multer");
 const passport = require("passport");
 const localStrategy = require("passport-local");
 const path = require("path");
@@ -26,6 +28,7 @@ const secret = "hehehaha";
 const adminRoutes = require('./routes/adminRoute');
 const faqRoute = require('./routes/faqRoute');
 const contactusRoute = require('./routes/contactusRoute');
+const blogRoute = require('./routes/blogRoute');
 
 const store = new MongoDBStore({
   mongoUrl: mongoURi,
@@ -116,6 +119,7 @@ passport.deserializeUser(async (data, done) => {
 app.use(adminRoutes);
 app.use(faqRoute);
 app.use(contactusRoute);
+app.use(blogRoute);
 
 // Listen for the port Number
 app.listen(PORT, () => {
