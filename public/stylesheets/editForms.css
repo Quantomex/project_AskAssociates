@@ -1,0 +1,52 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  /* Style the container for form and "Back" link */
+  .container {
+    text-align: center;
+  }
+
+  /* Style the form container */
+  form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  /* Style form labels */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Style form inputs and textarea */
+  input[type="file"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Style submit button */
+  input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }

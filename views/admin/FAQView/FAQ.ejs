@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="/stylesheets/stylepanel.css" rel="stylesheet type=" text/css">
+  <title>FAQ</title>
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+</head>
+
+<body>
+
+
+  <!-- Topbar Start -->
+  <div class="container-fluid">
+    <p class="text-xl-center fa-2x pt-2"><strong>Welcome to Admin Panel</strong></p>
+
+
+  </div>
+  <!-- Topbar End -->
+  <!-- Navbar Start -->
+  <div class="container-fluid">
+    <div class="row border-top px-xl-5">
+      <div class="col-lg-3 d-none d-lg-block">
+        <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+          <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+            <li><a href="/admin/FAQ" class="nav-item nav-link bg-active">FAQ</a></li>
+          </div>
+        </nav>
+      </div>
+      <div class="col-lg-9">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+              <div class="burger-menu">
+                <a class="nav-item nav-link active fa-2x"><strong> Add FAQs</strong></a>
+              </div>
+              <div class="burger-menu-tabs">
+                <li><a href="/admin/FAQ" class="nav-item nav-link bg-active">FAQs</a></li>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <form class="imageForm" action="/addFAQ" method="post">
+            <label for="question">Enter FAQ</label>
+            <input type="text" class="form-control" id="question" name="question" required>
+            <label for="answer">Enter FAQ Answer</label>
+            <input type="text" class="form-control" id="answer" name="answer" required>
+            <button type="submit" class="btn btn-primary btn_sub bt-cat">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+  <!-- Page Header Start -->
+  <div class="container-fluid bg-secondary mb-0">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 20px">
+      <h1 class="font-weight-semi-bold text-uppercase mb-3">FAQs</h1>
+
+    </div>
+  </div>
+  <!-- Page Header End -->
+  <div class="container-fluid pt-4 ">
+    <div class="row px-xl-5">
+      <!-- Shop Product Start -->
+      <div class="col-lg-12 col-md-12">
+        <div class="row pb-3">
+          <div class="col-12 pb-1">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+            </div>
+          </div>
+          <!-- Product Div Start  -->
+          <% for (let t of FAQs) { %>
+          <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+              <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+              </div>
+              <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                <h6 class="text-truncate mb-3">
+                </h6>
+                <div class="d-flex justify-content-center" style="font-size: 12px; overflow-x: scroll;">
+                  <p><strong>Question</strong> <%= t.question %></p>
+                  <p><strong>Answer</strong> <%= t.answer %></p>
+                </div>
+              </div>
+              <div class="card-footer d-flex justify-content-between bg-light border">
+                <form action="/deleteFAQ/<%= t._id  %>" method="post">
+                  <button type="submit" class="btn btn-sm text-dark p-0"><i class="fas fa-trash trashcolor mr-1 "></i>Delete</button>
+                </form>
+                <form action="/editFAQ/<%= t._id %>" method="get">
+                  <button type="submit" class="btn btn-sm text-dark p-0"><i class="fas fa-pen pencolor mr-1 fa-1x"></i>Edit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Template Javascript -->
+  <script src="/javascript/main.js"></script>
+</body>
+</html>

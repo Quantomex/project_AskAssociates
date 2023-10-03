@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(-105deg, #a88754, #D0A25C);
+
+}
+
+::selection {
+  background: #4158d0;
+  color: #fff;
+}
+
+.container1 {
+  width: 380px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container1 .maintext {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: #D0A25C
+
+}
+
+.container1 .form {
+  padding: 10px 30px 50px 30px;
+}
+
+.container1 .form input {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid #D0A25C;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.container1 .form input:focus,
+.container1 .form input:valid {
+  border-color:rgb(172, 114, 28)C;
+}
+
+.container1 .form input[type="submit"] {
+  color: #000000;
+  border: none;
+  padding-left: 0;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  background: #6e666625;
+  border-color: #D0A25C;
+  transition: all 0.3s ease;
+  
+
+}
+.container1 .form input[type="submit"]:hover {
+    background: #D0A25C;
+    color: white;
+  }
+.container1 .form input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+.container1 .form input::placeholder {
+  color: #999999;
+}
+
+.container1 .password-container {
+  position: relative;
+}
+
+.container1 .toggle-password-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container1 .toggle-password-button i {
+  color: #999999;
+  font-size: 18px;
+}
+
+.container1 .password-container input[type="password"] {
+  padding-right: 40px;
+  margin-top: 20px;
+}

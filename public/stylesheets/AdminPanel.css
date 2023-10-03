@@ -1,0 +1,92 @@
+/* AdminPanel.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(-5deg, #ffffff, #D0A25C);
+    color: #fff;
+    padding-top: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px 20px;
+    margin: 5px;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 20px;
+
+  }
+  
+  .sidebar-menu li a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .sidebar-menu li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .menu-heading {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  /* Style the submenus */
+  .submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .sidebar-menu li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    padding: 5px 0;
+    color: white; /* Set the color to white */
+  }
+  
+  /* Style the logo image */
+  .logo-img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Page content should be shifted to the right to make space for the sidebar */
+  .page-header {
+    margin-left: 250px;
+  }
+  
+  /* Style the content area */
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh; /* Ensure the content area takes up the full height */
+  }
+  

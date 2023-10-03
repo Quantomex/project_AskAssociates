@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit FAQ</title>
+    <!-- Include your CSS and other necessary dependencies here -->
+</head>
+<body>
+    <h1>Edit FAQ</h1>
+  
+    <form action="/editFAQ/<%= FAQss._id %>" method="post">
+        <label for="question">Edit FAQ Question</label>
+        <input type="text" class="form-control" id="question" name="question" value="<%= FAQss.question %>" required>
+
+        <label for="answer">Edit FAQ Answer</label>
+        <input type="text" class="form-control" id="answer" name="answer" value="<%= FAQss.answer %>" required>
+
+        <button type="submit" class="btn btn-primary">Update FAQ</button>
+    </form>
+    
+
+</body>
+</html>

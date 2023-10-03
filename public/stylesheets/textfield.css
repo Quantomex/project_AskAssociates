@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+} */
+
+li {
+	margin-left: 16px;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+/* Style the navbar */
+.navbar {
+    height: 200px;
+    width: 100%;
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style the list items (inline-block) */
+.navbar li {
+
+    display: inline-flex;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Add spacing between list items (adjust as needed) */
+}
+
+/* Style the links */
+.navbar li a {
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding around the links */
+    background-color: #CE994B; /* Background color for links */
+    color: #fff; /* Text color for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Style the links on hover */
+.navbar li a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+
+.container {
+	width: 100%;
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.toolbar {
+	padding: 16px;
+	background: #eee;
+}
+.toolbar .head {
+	display: flex;
+	grid-gap: 10px;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+}
+.toolbar .head > input {
+	max-width: 100px;
+	padding: 6px 10px;
+	border-radius: 6px;
+	border: 2px solid #ddd;
+	outline: none;
+}
+.toolbar .head select {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+}
+.toolbar .head .color {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	grid-gap: 6px;
+	padding: 0 10px;
+}
+.toolbar .head .color span {
+	font-size: 14px;
+}
+.toolbar .head .color input {
+	border: none;
+	padding: 0;
+	width: 26px;
+	height: 26px;
+	background: #fff;
+	cursor: pointer;
+}
+.toolbar .head .color input::-moz-color-swatch {
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+}
+.toolbar .btn-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-gap: 10px;
+}
+.toolbar .btn-toolbar button {
+	background: #fff;
+	border: 2px solid #ddd;
+	border-radius: 6px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+}
+.toolbar .btn-toolbar button:hover {
+	background: #f3f3f3;
+}
+#content {
+    margin-top: 20px;
+    border: 4px dotted #CE994B;
+	padding: 16px;
+	outline: none;
+	max-height: 50vh;
+	overflow: auto;
+}
+#show-code[data-active="true"] {
+	background: #eee;
+}
+.form-control {
+    margin-top: 50px;
+    display: block;
+    width: 20%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #CE994B;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn-primary {
+    margin-top: 20px;
+    color: #ffffff;
+    width: 100px;
+    font-size: 18px;
+    height: 30px;
+    background-color: #D0A25C;
+    border-color: #D0A25C;
+  }
