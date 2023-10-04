@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Company Submissions</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/OpForm.css">
+</head>
+<body>
+<div class="container">
+  <% include('../../partials/flash.ejs') %>
+  <% if (orderCompanies.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <a style="margin-top: 20px;" href="/admin/orderCompanies"><button>Back</button></a>    
+          <th>Submissions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% orderCompanies.forEach((submission, index) => { %>
+        <tr>
+          <td><strong>Submission <%= index + 1 %></strong></td>
+        </tr>
+        <tr>
+          <td><strong>Name:</strong> <%= submission.name %></td>
+        </tr>
+        <tr>
+          <td><strong>Company Name:</strong> <%= submission.companyName %></td>
+        </tr>
+        <tr>
+          <td><strong>Address:</strong> <%= submission.address %></td>
+        </tr>
+        <tr>
+          <td><strong>Phone Number:</strong> <%= submission.phoneNumber %></td>
+        </tr>
+        <tr>
+          <td><strong>Email Address:</strong> <%= submission.emailAddress %></td>
+        </tr>
+        <tr>
+          <td><strong>Date and Time:</strong> <%= submission.datePosted.toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true }) %></td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/deleteOrderCompany/<%= submission._id %>" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+  <p>No Order Company submissions available.</p>
+  <% } %>
+</div>
+</body>
+</html>

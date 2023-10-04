@@ -7,11 +7,12 @@ const multer = require('multer');
 const { storage } = require('../cloudinary/index');
 const upload = multer({ storage });
 
-// Create Blog Page
+// Retrieve Blog page on Admin Panel
 router.get('/admin/blog', isAdmin, async (req, res) => {
   const blogs = await Blog.find();
   res.render('./admin/blogView/blog', { blogs });
 });
+// Blog Page For User
 router.get('/blog', async (req, res) => {
   const blogs = await Blog.find(); // Fetch the blogs
   res.render('./otherpages/blog', { blogs }); // Pass the blogs with the variable name 'blogs'
@@ -31,16 +32,58 @@ router.post('/admin/blog/create', upload.single('image'), isAdmin, async (req, r
       res.status(500).json({ message: 'Error creating blog', error: error.message });
     }
   });
+  // Update Blog
+  router.get('/editBlogg/:id', isAdmin, async (req, res) => {
+    try {
+      const bloggs = await Blog.findById(req.params.id);
+      if (!bloggs) {
+        req.flash('error', 'Blog not found');
+        return res.redirect('/admin/blog');
+      }
+      res.render('./admin/blogView/editBlog', { blog: bloggs });
+    } catch (error) {
+      console.error('Error rendering blog update form:', error);
+      req.flash('error', 'Error rendering blog update form');
+      res.status(500).json({ message: 'Error rendering blog update form', error: error.message });
+    }
+  });
+  // Update Blog
+router.post('/editBlog/:id', upload.single('image'), isAdmin, async (req, res) => {
+  try {
+    const { title, data } = req.body;
+    const image = req.file ? req.file.path : '';
+
+    const blog = await Blog.findById(req.params.id);
+    if (!blog) {
+      req.flash('error', 'Blog not found');
+      return res.redirect('/admin/blog');
+    }
+
+    blog.title = title;
+    blog.data = data;
+    if (image) {
+      blog.image = image;
+    }
+
+    await blog.save();
+    req.flash('success', 'Blog updated successfully');
+    res.redirect('/admin/blog');
+  } catch (error) {
+    console.error('Error updating blog:', error);
+    req.flash('error', 'Error updating blog');
+    res.status(500).json({ message: 'Error updating blog', error: error.message });
+  }
+});
 
 // Delete Blog
 router.post('/deleteBlog/:id', isAdmin, async (req, res) => {
     try {
       const deletedBlog = await Blog.findByIdAndDelete(req.params.id);
       
-      // // Delete the associated image from Cloudinary
-      // if (deletedBlog.image) {
-      //   await uploader.destroy(deletedBlog.image);
-      // }
+      // Delete the associated image from Cloudinary
+      if (deletedBlog.image) {
+        await uploader.destroy(deletedBlog.image);
+      }
   
       req.flash('success', 'Blog deleted successfully');
       res.redirect('/admin/blog');

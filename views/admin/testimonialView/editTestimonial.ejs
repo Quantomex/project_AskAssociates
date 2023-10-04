@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Testimonial</title>
+  <!-- Add your CSS and other head elements here -->
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Testimonial</h1>
+    <% include('../../partials/flash.ejs') %>
+    <form class="testimonialForm" action="/editTestimonial/<%= testimonial._id %>" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="<%= testimonial.name %>" >
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="<%= testimonial.title %>" >
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="6" ><%= testimonial.description %></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input type="file" class="form-control-file" id="image" name="image">
+      </div>
+      <button type="submit" class="btn btn-primary btn_sub bt-cat">Update Testimonial</button>
+    </form>
+  </div>
+</body>
+</html>

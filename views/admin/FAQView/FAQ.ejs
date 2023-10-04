@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link href="/stylesheets/stylepanel.css" rel="stylesheet type=" text/css">
+  <link href="/stylesheets/stylepanel.css" rel="stylesheet " type=" text/css">
   <title>FAQ</title>
 
   <!-- Google Web Fonts -->
@@ -26,7 +26,7 @@
   <div class="container-fluid">
     <p class="text-xl-center fa-2x pt-2"><strong>Welcome to Admin Panel</strong></p>
 
-
+    <% include('../../partials/flash.ejs') %>
   </div>
   <!-- Topbar End -->
   <!-- Navbar Start -->
@@ -37,7 +37,10 @@
           <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
             <li><a href="/admin/FAQ" class="nav-item nav-link bg-active">FAQ</a></li>
             <li><a href="/admin/contactUs" class="nav-item nav-link">ContactUs Submissions</a></li>
-
+            <li><a href="/admin/blog" class="nav-item nav-link ">Blogs</a></li>
+            <li><a href="/admin/testimonials" class="nav-item nav-link">Testimonials</a></li>
+            <li><a href="/admin/jobs" class="nav-item nav-link  ">Jobs Posting</a></li>
+            <li><a href="/admin/orderCompanies" class="nav-item nav-link ">Order Company Submissions</a></li>
           </div>
         </nav>
       </div>
@@ -51,9 +54,14 @@
               <div class="burger-menu">
                 <a class="nav-item nav-link active fa-2x"><strong> Add FAQs</strong></a>
               </div>
+          
               <div class="burger-menu-tabs">
                 <li><a href="/admin/FAQ" class="nav-item nav-link bg-active">FAQs</a></li>
                 <li><a href="/admin/contactUs" class="nav-item nav-link">ContactUs Submissions</a></li>
+                <li><a href="/admin/blog" class="nav-item nav-link ">Blogs</a></li>
+                <li><a href="/admin/testimonials" class="nav-item nav-link">Testimonials</a></li>
+                <li><a href="/admin/jobs" class="nav-item nav-link  ">Jobs Posting</a></li>
+                <li><a href="/admin/orderCompanies" class="nav-item nav-link ">Order Company Submissions</a></li>
               </div>
             </div>
           </div>

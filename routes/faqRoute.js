@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const FAQ = require('../models/faqModel');
 const { isAdmin } = require('../middleware/isAdmin');
-
+// Middleware to parse form data
+router.use(express.urlencoded({ extended: true }));
 // Add FAQ Page
 router.get('/admin/FAQ', isAdmin, async (req, res) => {
   const FAQs = await FAQ.find();

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Blog</title>
+  <!-- Add your CSS and other head elements here -->
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Blog</h1>
+    <% include('../../partials/flash.ejs') %>
+    <form class="blogForm" action="/editBlog/<%= blog._id %>" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="<%= blog.title %>" required>
+      </div>
+      <div class="form-group">
+        <label for="data">Blog Data</label>
+        <textarea class="form-control" id="data" name="data" rows="6" required><%= blog.data %></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input type="file" class="form-control-file" id="image" name="image">
+      </div>
+      <button type="submit" class="btn btn-primary btn_sub bt-cat">Update Blog</button>
+    </form>
+  </div>
+</body>
+</html>
