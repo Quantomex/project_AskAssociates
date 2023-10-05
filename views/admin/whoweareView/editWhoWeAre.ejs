@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit WhoWeAre Entry</title>
+  <link href="/stylesheets/stylepanel.css" rel="stylesheet " type=" text/css">
+
+  <!-- Include your CSS and other necessary dependencies here -->
+</head>
+
+<body>
+    
+    <% include('../../partials/flash.ejs') %>
+    <div class="container"> 
+    <h1>Edit WhoWeAre Entry</h1>
+  <form action="/editWhoWeAre/<%= whoWeAre._id %>" method="post" enctype="multipart/form-data">
+    
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" value="<%= whoWeAre.name %>" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="<%= whoWeAre.title %>" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="5" required><%= whoWeAre.description %></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+  <!-- Include your JavaScript and other necessary dependencies here -->
+</body>
+
+</html>

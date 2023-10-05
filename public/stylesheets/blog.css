@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400, 600 | Patua+One:400|Oswald:400");
+
+.rectangle {
+    height:  422px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 1280px;
+}
+.title{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400px;
+    left: 85px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 216px;
+}
+.image-1{
+    height: 102px;
+    left: 85px;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    width: 102px;
+    color: white;
+}
+.blog {
+    align-items: center;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    height: 1532px;
+    overflow: hidden;
+    width: 1280px;
+  } 
+  
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+.overlap-group-container {
+    align-items: flex-start;
+    display: flex;
+    gap: 410px;
+    margin-right: 29px;
+    margin-top: 72px;
+    min-width: 1123px;
+  }
+
+.overlap-group10 {
+    height: 64px;
+    position: relative;
+    width: 508px;
+  }
+
+.vector-2 { 
+    height: 17px; 
+    left: 16px;
+    position: absolute;
+    top: 24px;
+    width: 17px;
+}
+.overlap-group4 {
+    align-items: flex-start;
+     border: 1px solid;
+    border-color: black; 
+    border-radius: 55px;
+     display: flex; 
+     gap: 194px; 
+     height: 64px;
+    justify-content: flex-end;
+    left: 0;
+    min-width: 506px;
+    padding: 9px 18px;
+    position: absolute;
+    top: 0;
+}
+.place-1{
+    left: 455px;
+    top: 30px;
+}
+.blog .place-3 {
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+.place{
+    left: 805px;
+    top: 226px;
+
+}
+
+.place-2 {
+    left: 1157px;
+    top: 30px;
+}
+.blog .search-1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    font-weight: 400px;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 27px;
+}
+.blog .flex{
+    align-items: flex-start;
+    display: flex;
+}
+.about-us{
+    left: 637px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+.order-company{
+    left: 741px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+.apply-for-tax-rebate{
+    left: 898px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+.services{
+    left: 539px;
+    position: absolute;
+    top: 30px;
+    color: white;
+}
+.services-1 {
+    margin-top: 12px;
+    min-height: 22px;
+}
+.blog .services-2 {
+    letter-spacing: 0;
+    line-height: normal;
+}
+.blog .contact {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 13px;
+    min-height: 22px;
+}
+.blog .flex-col-3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.blog .line {
+    height: 1px;
+    object-fit: cover;
+}
+.blog .place-3{
+    line-height: normal;
+    position: absolute;
+    letter-spacing: 0;
+}
+.blog .blog-3{
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+.blog-2{
+    left: 1087px;
+    top: 30px;
+}
+.blog-1{
+    left: 915px;
+    top: 226px;
+}
