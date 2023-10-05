@@ -83,6 +83,16 @@
               <label for="image">Image</label>
               <input type="file" class="form-control-file" id="image" name="image" accept="image/*" required>
             </div>
+            <div class="form-group">
+              <label for="rating">Star Rating</label>
+              <select class="form-control" id="rating" name="rating" required>
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+              </select>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
       </div>
@@ -120,6 +130,11 @@
                     <p><strong>Name:</strong> <%= test.name %></p>
                     <p><strong>Title:</strong> <%= test.title %></p>
                     <p><strong>Description:</strong> <%= test.description %></p>
+                    <p><strong>Rating:</strong>
+                      <% for (let i = 0; i < test.rating; i++) { %>
+                        <span class="fa fa-star checked"></span>
+                      <% } %>
+                    </p>
                 </div>
               </div>
               <div class="card-footer d-flex justify-content-between bg-light border">

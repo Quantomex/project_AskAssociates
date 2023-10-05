@@ -11,12 +11,11 @@ router.get('/admin/testimonials', isAdmin, async (req, res) => {
   const t = await Test.find();
   res.render('./admin/testimonialView/testimonials', { t });
 });
-// Create Testimonial
 router.post('/addTestimonial', upload.single('image'), isAdmin, async (req, res) => {
   try {
-    const { name, title, description } = req.body;
+    const { name, title, description, rating } = req.body;
     const image = req.file ? req.file.path : '';
-    const tms = new Test({ image, name, title, description });
+    const tms = new Test({ image, name, title, description, rating });
     await tms.save();
     req.flash('success', 'Testimonial added successfully');
     res.redirect('/admin/testimonials');
@@ -60,6 +59,7 @@ router.post('/editTestimonial/:id', upload.single('image'), isAdmin, async (req,
     testimonial.name = req.body.name;
     testimonial.title = req.body.title;
     testimonial.description = req.body.description;
+    testimonial.rating = req.body.rating; // Update the rating field
 
     await testimonial.save();
 

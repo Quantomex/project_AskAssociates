@@ -3,6 +3,7 @@
 <head>
   <title>Edit Testimonial</title>
   <!-- Add your CSS and other head elements here -->
+  <link href="/stylesheets/stylepanel.css" rel="stylesheet " type=" text/css">
 </head>
 <body>
   <div class="container">
@@ -24,6 +25,16 @@
       <div class="form-group">
         <label for="image">Image</label>
         <input type="file" class="form-control-file" id="image" name="image">
+      </div>
+      <div class="form-group">
+        <label for="rating">Star Rating</label>
+        <select class="form-control" id="rating" name="rating" required>
+          <option value="1" <%= testimonial.rating === 1 ? 'selected' : '' %>>1 star</option>
+          <option value="2" <%= testimonial.rating === 2 ? 'selected' : '' %>>2 stars</option>
+          <option value="3" <%= testimonial.rating === 3 ? 'selected' : '' %>>3 stars</option>
+          <option value="4" <%= testimonial.rating === 4 ? 'selected' : '' %>>4 stars</option>
+          <option value="5" <%= testimonial.rating === 5 ? 'selected' : '' %>>5 stars</option>
+        </select>
       </div>
       <button type="submit" class="btn btn-primary btn_sub bt-cat">Update Testimonial</button>
     </form>

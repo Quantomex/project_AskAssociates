@@ -41,7 +41,7 @@ router.post('/admin/login', passport.authenticate('admin', {
 }), (req, res) => {
    req.flash('success', 'Welcome back, admin!');
   
-  res.redirect('/admin/testimonial');
+  res.redirect('/admin/blog');
 });
 
 

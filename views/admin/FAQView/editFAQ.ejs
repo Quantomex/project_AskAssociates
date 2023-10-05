@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit FAQ</title>
+    <link href="/stylesheets/stylepanel.css" rel="stylesheet " type=" text/css">
     <!-- Include your CSS and other necessary dependencies here -->
 </head>
 <body>
     <h1>Edit FAQ</h1>
     <% include('../../partials/flash.ejs') %>
     <form action="/editFAQ/<%= FAQss._id %>" method="post">
+        <div class="form-group">
         <label for="question">Edit FAQ Question</label>
         <input type="text" class="form-control" id="question" name="question" value="<%= FAQss.question %>" required>
 
@@ -17,6 +19,7 @@
         <input type="text" class="form-control" id="answer" name="answer" value="<%= FAQss.answer %>" required>
 
         <button type="submit" class="btn btn-primary">Update FAQ</button>
+    </div>
     </form>
     
 
