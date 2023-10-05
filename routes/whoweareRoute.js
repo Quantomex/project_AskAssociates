@@ -59,7 +59,7 @@ router.post('/editWhoWeAre/:id', upload.single('image'), isAdmin, async (req, re
 
     const whoWeAre = await WhoWeAre.findById(req.params.id);
     if (!whoWeAre) {
-      req.flash('error', 'Who We Are entry not found');
+      req.flash('error', 'Data not found');
       return res.redirect('/admin/whoweare');
     }
 
@@ -70,7 +70,7 @@ router.post('/editWhoWeAre/:id', upload.single('image'), isAdmin, async (req, re
 
     await whoWeAre.save();
 
-    req.flash('success', 'Who We Are entry updated successfully');
+    req.flash('success', ' entry updated successfully');
     res.redirect('/admin/whoweare');
   } catch (error) {
     console.error('Error updating Who We Are entry:', error);

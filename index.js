@@ -9,6 +9,7 @@ require('./models/blogModel');
 require('./models/testModel')
 require('./models/jobsModel');
 require('./models/ordercompanyModel');
+require('./models/whoweareModel');
 
 const express = require("express");
 const MongoDBStore = require("connect-mongo");
@@ -35,6 +36,7 @@ const blogRoute = require('./routes/blogRoute');
 const testRoute = require('./routes/testimonialRoute');
 const jobsRoute = require('./routes/jobsRoute');
 const ordercompanyRoute = require('./routes/ordercompanyRoute');
+const whoweareRoute = require('./routes/whoweareRoute');
 
 const store = new MongoDBStore({
   mongoUrl: mongoURi,
@@ -129,6 +131,7 @@ app.use(blogRoute);
 app.use(testRoute);
 app.use(jobsRoute);
 app.use(ordercompanyRoute);
+app.use(whoweareRoute);
 
 // Listen for the port Number
 app.listen(PORT, () => {
