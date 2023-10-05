@@ -8,6 +8,7 @@
     <!-- Include your CSS and other necessary dependencies here -->
 </head>
 <body>
+    <div class="container"> 
     <h1>Edit FAQ</h1>
     <% include('../../partials/flash.ejs') %>
     <form action="/editFAQ/<%= FAQss._id %>" method="post">
@@ -22,6 +23,6 @@
     </div>
     </form>
     
-
+</div>
 </body>
 </html>

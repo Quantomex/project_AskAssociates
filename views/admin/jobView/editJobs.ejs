@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Job Listing</title>
+  <link href="/stylesheets/stylepanel.css" rel="stylesheet " type=" text/css">
+
+  <!-- Include your CSS and other necessary dependencies here -->
+</head>
+
+<body>
+    
+    <% include('../../partials/flash.ejs') %>
+    <div class="container"> 
+    <h1>Edit Job Listing</h1>
+  <form action="/editJob/<%= job._id %>" method="post" enctype="multipart/form-data">
+    
+    <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input type="text" class="form-control" id="jobTitle" name="jobTitle" value="<%= job.jobTitle %>" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="jobDescription">Job Description</label>
+        <textarea class="form-control" id="jobDescription" name="jobDescription" rows="5" required><%= job.jobDescription %></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="urlLink">URL Link</label>
+        <input type="text" class="form-control" id="urlLink" name="urlLink" value="<%= job.urlLink %>" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input type="file" class="form-control-file" id="image" name="image" accept="image/*">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+  <!-- Include your JavaScript and other necessary dependencies here -->
+</body>
+
+</html>
