@@ -8,7 +8,9 @@ const {isAdmin} = require('../middleware/isAdmin');
 router.get('/admin/signup', (req, res) => {
   res.render('./admin/adminSignup');
 });
-
+router.get('/', async (req , res) => {
+  res.render('./otherpages/home');
+})
 router.post('/admin/signup', async (req, res, next) => {
   const { username, password } = req.body;
   
