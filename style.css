@@ -439,3 +439,113 @@ footer p {
   background-color: white;
   margin: 30px auto;
 }
+
+/* Akram */
+.underlineHeadings{
+  width: 56px;
+height: 12px;
+flex-shrink: 0;
+border-radius: 40px;
+background: #FFF;
+margin-top: 20px;
+}
+
+.teamText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamsmallText{
+  color: #7E50CA;
+font-family: Open Sans;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.teamHead{
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.aboutTeam{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.teamImgRelative{
+  width: 253px;
+height: 375px;
+flex-shrink: 0;
+border: 11px solid #373737;
+position: relative;
+margin-left: -40px;
+}
+
+.teamPersonImg{
+  width: 250px;
+height: auto;
+flex-shrink: 0;
+position: absolute;
+top: -30px;
+right: -30px;
+}
+.indvidualTeam{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teampersonHead{
+  color: #7E50CA;
+font-family: Open Sans;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 15px;
+}
+.teampersonsmallText{
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+}
+.teampersonText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.pesonTeamAbout{
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  width: 400px;
+  text-align: justify;
+  margin-top: 15px;
+}
+@media (max-width:1300px) {
+  .indvidualTeam{
+    margin-top: 70px;
+  }
+  
+}
+@media (max-width:430px) {
+ .pesonTeamAbout{width: 85%;}
+  
+}
+/* Akram */
