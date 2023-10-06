@@ -1,0 +1,28 @@
+body {
+
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-open-sans: "Open Sans";
+    --font-oswald: Oswald;
+    --font-patua-one: "Patua One";
+  
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-5xl: 24px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gainsboro: #363232;
+    --color-seagreen: #49a16d;
+  
+    /* Border radiuses */
+    --br-3xs: 10px;
+    --br-36xl: 55px;
+  }
+  

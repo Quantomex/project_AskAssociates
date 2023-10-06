@@ -1,0 +1,450 @@
+.contact-child,
+.contact-item {
+  position: absolute;
+  left: 0;
+  width: 1280px;
+}
+.contact-child {
+  top: 0;
+  height: 423px;
+  object-fit: cover;
+}
+.contact-item {
+  top: 1px;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 422px;
+}
+.contact1,
+.home {
+  position: absolute;
+  top: 227px;
+  left: 805px;
+}
+.contact1 {
+  left: 914px;
+}
+.contact2 {
+  position: absolute;
+  top: 217px;
+  left: calc(50% - 555px);
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-patua-one);
+}
+.home1 {
+  position: absolute;
+  top: 31px;
+  left: 455px;
+  font-weight: 600;
+}
+.about-us,
+.services {
+  position: absolute;
+  top: 31px;
+  left: 539px;
+}
+.about-us {
+  left: 637px;
+}
+.apply-for-tax,
+.order-company {
+  position: absolute;
+  top: 31px;
+  left: 741px;
+}
+.apply-for-tax {
+  left: 898px;
+}
+.blog,
+.contact-inner,
+.contact3 {
+  position: absolute;
+  top: 31px;
+  left: 1087px;
+}
+.contact-inner,
+.contact3 {
+  left: 1157px;
+}
+.contact-inner {
+  top: 59px;
+  border-radius: 0 0 1var (--br-41xl) 60px;
+  background-color: var(--color-white);
+  width: 57px;
+  height: 3px;
+}
+.image-1-icon {
+  position: absolute;
+  top: 8px;
+  left: 85px;
+  width: 102px;
+  height: 102px;
+  object-fit: cover;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #353535;
+  width: 1280px;
+  height: 319px;
+}
+.explore,
+.get-in-touch {
+  position: absolute;
+  top: 36px;
+  left: 367px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-seagreen-100);
+}
+.get-in-touch {
+  left: 561px;
+}
+.email,
+.services1 {
+  position: absolute;
+  top: 73px;
+}
+.services1 {
+  left: 367px;
+  font-weight: 600;
+}
+.email {
+  left: 561px;
+}
+.contact-us,
+.enter-your-email {
+  position: absolute;
+  top: 43px;
+  left: 908px;
+}
+.contact-us {
+  top: 108px;
+  left: 367px;
+}
+.contact-number,
+.group-item,
+.timings {
+  position: absolute;
+  top: 108px;
+  left: 561px;
+}
+.group-item,
+.timings {
+  top: 143px;
+}
+.group-item {
+  top: 77.5px;
+  left: 907.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 312px;
+  height: 1px;
+}
+.group-inner {
+  position: absolute;
+  top: 100px;
+  left: 908px;
+  border-radius: 31.5px;
+  background-color: var(--color-white);
+  width: 145px;
+  height: 44px;
+}
+.subscribe {
+  position: absolute;
+  top: 109px;
+  left: 938px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-seagreen-100);
+}
+.line-div {
+  position: absolute;
+  top: 267.5px;
+  left: -0.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1281px;
+  height: 1px;
+}
+.ask-associate-all {
+  position: absolute;
+  top: 280px;
+  left: calc(50% - 154px);
+  color: #fffcfc;
+}
+.image-1-icon1 {
+  position: absolute;
+  top: 36px;
+  left: 46px;
+  width: 102px;
+  height: 102px;
+  object-fit: cover;
+}
+.ask-associate-is {
+  margin: 0;
+}
+.ask-associate-is-container {
+  position: absolute;
+  top: 130px;
+  left: 46px;
+  font-size: 12px;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 319px;
+}
+.facebook-icon,
+.linkedin-icon,
+.twitter-icon {
+  position: absolute;
+  top: 229px;
+  left: 1123px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.linkedin-icon,
+.twitter-icon {
+  left: 1191px;
+}
+.linkedin-icon {
+  left: 1157px;
+}
+.group-parent {
+  position: absolute;
+  top: 1373px;
+  left: -3px;
+  width: 1280px;
+  height: 319px;
+}
+.rectangle-div,
+.vector-icon {
+  position: absolute;
+  top: 229px;
+  left: 881px;
+  width: 12px;
+  height: 19px;
+}
+.rectangle-div {
+  top: 1247px;
+  left: 105px;
+  border-radius: 70px;
+  background-color: var(--color-seagreen-100);
+  border: 1px solid var(--color-seagreen-100);
+  box-sizing: border-box;
+  width: 121px;
+  height: 57px;
+}
+.submit {
+  position: absolute;
+  top: 1263px;
+  left: 136px;
+  font-size: var(--font-size-lg);
+}
+.character-icon,
+.device-icon {
+  position: absolute;
+  top: 707.96px;
+  left: 704px;
+  width: 355.07px;
+  height: 213.66px;
+}
+.character-icon {
+  top: 564px;
+  width: 343.7px;
+  height: 303.83px;
+}
+.paper-planes-icon {
+  position: absolute;
+  top: 564.01px;
+  left: 710.53px;
+  width: 390.47px;
+  height: 219.63px;
+}
+.envelope-icon,
+.icon {
+  position: absolute;
+  top: 884.42px;
+  left: 886.13px;
+  width: 88.9px;
+  height: 57.58px;
+}
+.envelope-icon {
+  top: 832.78px;
+  left: 964.96px;
+  width: 103.27px;
+  height: 63.02px;
+}
+.lets-talk,
+.your-name {
+  position: absolute;
+  top: 502px;
+  left: 94px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+  color: var(--color-seagreen-100);
+}
+.your-name {
+  top: 587px;
+  left: 110px;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-100);
+}
+.contact-child1 {
+  position: absolute;
+  top: 618px;
+  left: 94px;
+  border-radius: var(--br-41xl);
+  background-color: var(--color-seagreen-200);
+  width: 400px;
+  height: 63px;
+}
+.email1 {
+  position: absolute;
+  top: 707px;
+  left: 110px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+.contact-child2 {
+  position: absolute;
+  top: 738px;
+  left: 94px;
+  border-radius: var(--br-41xl);
+  background-color: var(--color-seagreen-200);
+  width: 400px;
+  height: 63px;
+}
+.phone {
+  position: absolute;
+  top: 827px;
+  left: 110px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+.contact-child3 {
+  position: absolute;
+  top: 858px;
+  left: 94px;
+  border-radius: var(--br-41xl);
+  background-color: var(--color-seagreen-200);
+  width: 400px;
+  height: 63px;
+}
+.your-message {
+  position: absolute;
+  top: 947px;
+  left: 110px;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+.contact-child4 {
+  position: absolute;
+  top: 978px;
+  left: 94px;
+  border-radius: 15px;
+  background-color: var(--color-seagreen-200);
+  width: 400px;
+  height: 222px;
+}
+.enter-your-name {
+  position: absolute;
+  top: 636px;
+  left: 119px;
+  color: var(--color-silver);
+}
+.enter-your-email1,
+.enter-your-number,
+.type-your-message {
+  position: absolute;
+  top: 757px;
+  left: 119px;
+  color: var(--color-silver);
+}
+.enter-your-number,
+.type-your-message {
+  top: 876px;
+}
+.type-your-message {
+  top: 993px;
+}
+.accountingaskassociates,
+.ask-associates-720-container,
+.div,
+.mon-fri {
+  position: absolute;
+  top: 1042px;
+  left: 775px;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.ask-associates-720-container,
+.div,
+.mon-fri {
+  top: 1175px;
+}
+.ask-associates-720-container,
+.div {
+  top: 1096px;
+}
+.div {
+  top: 983px;
+  left: 777px;
+}
+.vector-icon1 {
+  position: absolute;
+  height: 1.36%;
+  width: 1.8%;
+  top: 58.22%;
+  right: 41.88%;
+  bottom: 40.43%;
+  left: 721px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.email-icon,
+.vector-icon2 {
+  position: absolute;
+  top: 1042px;
+  left: 718px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.vector-icon2 {
+  height: 1.54%;
+  width: 1.41%;
+  top: 65.01%;
+  right: 42.03%;
+  bottom: 33.45%;
+  left: 721px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.clock-icon {
+  position: absolute;
+  top: 1171px;
+  left: 716px;
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+}
+.contact {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1692px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-open-sans);
+}

@@ -75,6 +75,24 @@ router.post('/editBlog/:id', upload.single('image'), isAdmin, async (req, res) =
   }
 });
 
+// View Single Blog
+router.get('/blog/:id', async (req, res) => {
+  try {
+    const blog = await Blog.findById(req.params.id);
+    
+    if (!blog) {
+      req.flash('error', 'Blog not found');
+      return res.redirect('/blog'); // Redirect to the blog page if the blog is not found
+    }
+    
+    res.render('./admin/blogView/singleBlog', { blog }); // Render a template for viewing a single blog
+  } catch (error) {
+    console.error('Error viewing blog:', error);
+    req.flash('error', 'Error viewing blog');
+    res.status(500).json({ message: 'Error viewing blog', error: error.message });
+  }
+});
+
 // Delete Blog
 router.post('/deleteBlog/:id', isAdmin, async (req, res) => {
     try {
