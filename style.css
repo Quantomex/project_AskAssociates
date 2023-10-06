@@ -1,6 +1,6 @@
 /*------ Variables ------*/
 :root {
-  --base-shade-1: #00a8fa;
+  --base-shade-1: #7E50CA;
   --white-shade-1: #ffffff;
   --white-shade-2: #d7e1f3;
   --black-shade-1: #232323;
@@ -39,6 +39,15 @@ body{
   font-family: 'Open Sans', sans-serif;
 
 }
+.anchorroundtext{
+  position: absolute; width: 200px; text-decoration: none; color: rgb(255, 255, 255); font-size: 20px; padding: 10px 0 0 20px;
+}
+.roundbg{
+  width: 50px; height: 50px; position: relative; background-color: #7E50CA; margin: 20px 0; border-radius: 30px; margin-left: 20px;
+}
+.roundtextset{
+  padding: 10px 0 0 0px;
+}
 section,
 footer {
   padding: 9rem 5rem;
@@ -51,6 +60,7 @@ footer {
 }
 .column {
   width: 100%;
+  border: 1px solid #7E50CA;
 }
 .section-desc {
   text-align: center;
@@ -71,10 +81,10 @@ h2 {
 }
 h3 {
   font-size: var(--heading-font-size-3);
-  color: var(--black-shade-1);
+  color: var(--white-shade-1);
   font-weight: 700;
   margin: 1.5rem 0;
-  text-align: center;
+  text-align: left;
 }
 h4 {
   font-size: var(--heading-font-size-4);
@@ -143,13 +153,13 @@ nav ul.active {
 }
 /*-- Sticky Header --*/
 .sticky {
-  background-color: var(--white-shade-1);
+  background-color: #292929;
   box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.05);
 }
 .sticky nav ul a,
 .sticky nav a#logo,
 .sticky #ham-menu {
-  color: var(--black-shade-1);
+  color: var(--white-shade-1);
 }
 /*-- Link Hover Effect --*/
 nav ul a:hover {
@@ -160,7 +170,7 @@ nav ul a:hover {
 }
 /*------ Section: Hero ------*/
 section.hero {
-  background-color: #2b2a2d;
+  background-color: #292929;
   display: grid;
   grid-template-columns: 5fr 7fr;
   align-items: center;
@@ -188,14 +198,14 @@ section.hero {
 }
 /*------ Section: Features ------*/
 .features .row {
-  align-items: stretch;
+  align-items: center;
 }
 .features .column {
   padding: 6rem 2rem;
   border-radius: var(--border-radius-1);
 }
 .features .column p {
-  text-align: center;
+  text-align: left;
 }
 .features h3 {
   margin: 3rem 0;
@@ -215,9 +225,9 @@ section.hero {
 .navbar-image-width{
   width: 230px;
 }
-.features .column:hover {
+/* .features .column:hover {
   background-color: var(--base-shade-1);
-}
+} */
 .features .column:hover h3 {
   color: var(--white-shade-1);
 }
@@ -246,12 +256,23 @@ section.hero {
   width: 100%;
 }
 .courses .column p {
-  text-align: center;
+  text-align: left;
   flex-grow: 1;
+}
+.purplecolor{
+  color: var(--purple-shade-1);
+}
+.bordernone{
+  border: none;
 }
 .courses-btn {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+}
+.circlesa{
+  background-color: #00a8fa;
+  border-radius: 50px;
+  width: 60px;
 }
 .courses-btn .btn:hover {
   color: var(--white-shade-1);
