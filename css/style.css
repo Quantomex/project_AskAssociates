@@ -250,7 +250,17 @@ section.hero {
   
 }
 section{
-  height: 100vh;
+}
+.posRel{
+  position: relative;
+}
+.moonelipse{
+  position: absolute;
+  bottom: -95px;
+  left: -10px;
+  width: 200px;
+height: 200.816px;
+flex-shrink: 0;
 }
 #header-shape {
   position: absolute;
