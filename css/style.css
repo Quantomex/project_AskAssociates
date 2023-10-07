@@ -798,12 +798,85 @@ footer p {
 .servicecolumn p span {
   color: #7E50CA;
 }
+.aboutDiv{
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutContent{
+  width: 80%;
+  height: auto;
+  background: #373737;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: -2;
+}
+.textAboutDiv{
+  width: 60%;
+  margin-top: 90px;
+  margin-left: 65px;
+  padding-right: 60px;
+}
+.aboutContent .teamImgRelative{
+  width: 275px;
+  height: 470px;
+  border: 11px solid #292929;
+position: absolute;
+top: 0;
+right: 65px;
+}
+.aboutContent .teamImgRelative .teamPersonImg{
+  width: 300px;
+  right: -60px;
+
+  height: auto;
+}
+.aboutDiv{
+  margin-bottom: 70px;
+}
+.aboutround{
+margin-top: 50px;
+margin-bottom: 70px;
+}
+.aboutPara{
+  color: #D9D9D9;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
 @media (max-width:1300px) {
   .indvidualTeam {
     margin-top: 70px;
   }
 
+}
+@media (max-width:1220px) {
+  
+
+.aboutContent {
+  flex-direction: column-reverse;
+  align-items:  center;
+}
+.aboutContent .teamImgRelative{
+  
+position: relative;
+right: 0;
+
+}
+.textAboutDiv{
+  width: 85%;
+}
+.aboutDivImg{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 
 @media (max-width:650px) {
@@ -858,6 +931,11 @@ footer p {
   .hero-content{
     width: 100%;
   }
+  .textAboutDiv{
+    width: 95%;
+  }
+  .aboutContent{
+    width: 90%;}
 }
 @media (max-width:550px) {
   
@@ -886,6 +964,18 @@ footer p {
   .servicesOffer{
     padding-left: 12px;
   }
+  
+.aboutContent .teamImgRelative{
+  width: 215px;
+  height: 310px;
+margin-left: 1px;
+}
+.aboutContent .teamImgRelative .teamPersonImg{
+  width: 200px;
+  right: -20px;
+
+  height: auto;
+}
   
 }
 @media (max-width:430px) {
