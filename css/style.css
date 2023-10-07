@@ -37,6 +37,8 @@ html {
 body{
   background: #292929;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  
 
 }
 .anchorroundtext{
@@ -548,6 +550,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-top: 25px;
+text-align: center;
 }
 .servicesOffer{
   display: flex;
@@ -556,6 +559,8 @@ margin-top: 25px;
   justify-content: center;
   margin-top: 90px;
   margin-right: -50px;
+  padding-left: 30px;
+  padding-right: 60px;
 }
 .servicecolumn{
   display: flex;
@@ -624,7 +629,7 @@ flex-shrink: 0;
   }
   .l3{
     margin-right: -80px;
-    padding-left: 70%;
+    padding-left: 50%;
   
   }
   .r1{
@@ -645,8 +650,91 @@ flex-shrink: 0;
   line-height: normal;
   }
 }
+@media (max-width:550px) {
+  
+  .serviceImg{
+    width: auto;
+    height: 205px;
+  }
+  
+
+.servicecolumn {
+    margin-top: -80px;
+}
+
+.servicecolumn p {
+  margin-top: 55px;
+ 
+}
+.r3 {
+  margin-left: -28px;
+}
+.r1 {
+  margin-left: -29px;
+}
+}
+@media (max-width:464px) {
+  .servicesOffer{
+    padding-left: 12px;
+  }
+  
+}
 @media (max-width:430px) {
  .pesonTeamAbout{width: 85%;}
+ .servicecolumn p {
+ 
+  font-size: 10px;
+  padding: 5px;
+
+}
+.l1 {
+  margin-left: 30px;
+ 
+
+  float: right;
+}
+.l2{
+  padding-right: 0px;
+  margin-right: -3px;
+  margin-left: 15px;
+}
+.l3{
+  margin-left: 40px;
+ 
+
+  float: right;
+}
+.r1{
+  margin-left: -60px;
+  margin-bottom: 5px;
+}
+.r2{
+  margin-left: 0px;
+}
+.r3{
+  margin-left: -40px;
+}
+
+
+}
+@media (max-width:370px) {
+  .servicesOffer{
+    /* width: 200px; */
+  /* margin-right: -200px; */
+  }
+  .serviceImg{
+    width: 150px;
+  }
+  .r1{
+    margin-left: -30px;
+    margin-bottom: 7px;
+  }
+  .r2{
+    margin-left: 0px;
+  }
+  .r3{
+    margin-left: -20px;
+  }
   
 }
 
