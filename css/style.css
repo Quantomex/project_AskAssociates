@@ -249,7 +249,19 @@ section.hero {
   align-items: center;
   
 }
-
+section{
+}
+.posRel{
+  position: relative;
+}
+.moonelipse{
+  position: absolute;
+  bottom: -95px;
+  left: -10px;
+  width: 200px;
+height: 200.816px;
+flex-shrink: 0;
+}
 #header-shape {
   position: absolute;
   top: 0;
@@ -916,10 +928,10 @@ right: 0;
 }
 @media (max-width:650px) {
   section.hero{
-    height: 115vh;
+    height: 140vh;
   }
   .fontset{
-    font-size: 50px;
+    font-size: 40px;
   }
   .courses .column{
     width: 80% !important;
@@ -979,6 +991,9 @@ right: 0;
     width: 90%;}
 }
 @media (max-width:550px) {
+  .navbar-image-width{
+    width: 150px;
+  }
   .clientcolumn{
     width: 80%;
   }
