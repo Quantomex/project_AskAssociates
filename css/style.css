@@ -1296,17 +1296,29 @@ margin-left: 1px;
 .rowfooter{
   display: flex; flex-direction: row; flex-wrap: wrap; padding: 20px 100px;
 }
+.w-100{
+  width: 100vw;
+}
+.linkstag{
+  float: left; width: 50%;
+}
 .colimn1{
-  width: 28%;
+  width: 30%;
+}
+.linkstags{
+  font-size: 20px; color: white; text-decoration: none; padding: 40px;
+}
+.emial-footer{
+  float: right; width: 50%;
 }
 .footerlogo{
-  width: 400px;
+  width: 300px;
 }
 .footertext{
   text-align: left;
 }
 .colimn2{
-  width: 20%; padding: 0 80px;
+  width: 30%; padding: 0 80px;
 }
 .colimn3{
   width: 40%; padding: 0 20px;
@@ -1331,12 +1343,18 @@ margin-left: 1px;
   width: 40px;
   align-items: center;
 }
-.rowinner1 a{
+.rowinner1 span{
   font-size: 20px; color: white; text-decoration: none;
+}
+.footeremail{
+  float: right; background-color: #373737; padding: 20px; width: 350px; border: none; border-radius: 40px; margin-right: 80px;
 }
 .footeremail::placeholder{
   font-size: 20px;
   color: white;
+}
+.greyline{
+  width: 100%; height: 1px; background-color: #FFFFFF47;
 }
 .triangleclient{
   position: absolute; bottom: -25px; left: 25px;
@@ -1351,6 +1369,9 @@ margin-left: 1px;
 .imagecllient span{
   font-size: 28px; font-weight: 600; padding: 24px; color: white;
 }
+.companyname{
+  padding: 30px; text-align: center; font-size: 16px;
+}
 .clientcolumn:hover{
   transform: translateY(-10px); /* Adjust the value to move it up by desired amount */
   transition: all 0.5s;
@@ -1359,3 +1380,234 @@ margin-left: 1px;
   transform: scale(1.1); /* Adjust the value to control the zoom level */
   transition: transform 0.5s ease; /* Add a smooth transition effect */
 }
+@media (max-width: 1260px){
+  .companyname{
+    font-size: 12px;
+  }
+  .rowfooter{
+    padding: 20px 50px;
+  }
+  .linkstag{
+    float: left; width: 50%;
+  }
+  .colimn1{
+    width: 30%;
+  }
+  .linkstags{
+    font-size: 15px; color: white; text-decoration: none; padding: 20px;
+  }
+  .emial-footer{
+    float: right; width: 50%;
+  }
+  .footerlogo{
+    width: 200px;
+  }
+  .footertext{
+    text-align: left;
+  }
+  .colimn2{
+    width: 30%; padding: 0 40px;
+  }
+  .colimn3{
+    width: 40%; padding: 0 20px;
+  }
+  .headingfooter{
+    text-align: left; color: #7E50CA; font-size: 20px;
+  }
+ 
+  .rowinner img{
+    padding-right: 10px;
+  }
+  .rowinner a{
+    font-size: 15px; color: white; text-decoration: none;
+  }
+  .rowinner1{
+    display: flex; flex-wrap: wrap; flex-direction: row; padding-top: 10px;
+  }
+  .rowinner1 img{
+    padding-right: 10px;
+    width: 40px;
+    align-items: center;
+  }
+  .rowinner1 span{
+    font-size: 15px; color: white; text-decoration: none;
+  }
+  .footeremail{
+    float: right; background-color: #373737; padding: 20px; width: 350px; border: none; border-radius: 40px; margin-right: 80px;
+  }
+  .footeremail::placeholder{
+    font-size: 15px;
+    color: white;
+  }
+  .greyline{
+    width: 100%; height: 1px; background-color: #FFFFFF47;
+  }
+}
+
+
+@media (max-width: 928px){
+  .companyname{
+    font-size: 12px;
+  }
+  .rowfooter{
+    padding: 20px 30px;
+  }
+  .linkstag{
+    float: left; width: 50%;
+  }
+  .colimn1{
+    width: 30%;
+  }
+  .linkstags{
+    font-size: 15px; color: white; text-decoration: none; padding: 20px;
+  }
+  .emial-footer{
+    float: right; width: 50%;
+  }
+  .footerlogo{
+    width: 200px;
+  }
+  .footertext{
+    text-align: left;
+  }
+  .colimn2{
+    width: 30%; padding: 0 40px;
+  }
+  .colimn3{
+    width: 40%; padding: 0 20px;
+  }
+  .headingfooter{
+    text-align: left; color: #7E50CA; font-size: 20px;
+  }
+ 
+  .rowinner img{
+    padding-right: 10px;
+  }
+  .rowinner a{
+    font-size: 12px; color: white; text-decoration: none;
+  }
+  .rowinner1{
+    display: flex; flex-wrap: wrap; flex-direction: row; padding-top: 10px;
+  }
+  .rowinner1 img{
+    padding-right: 10px;
+    width: 40px;
+    align-items: center;
+  }
+  .rowinner1 span{
+    font-size: 12px; color: white; text-decoration: none;
+  }
+  .footeremail{
+    float: right; background-color: #373737; padding: 20px; width: 220px; border: none; border-radius: 40px; margin-right: 20px;
+  }
+  .footeremail::placeholder{
+    font-size: 15px;
+    color: white;
+  }
+  .greyline{
+    width: 100%; height: 1px; background-color: #FFFFFF47;
+  }
+}
+
+@media (max-width: 648px){
+  .companyname{
+    font-size: 12px;
+  }
+  .rowfooter{
+    padding: 20px 30px;
+  }
+
+  .linkstag{
+    float: none; width: 100%; padding: 20px; margin: 0 auto; text-align: center; align-items: center;
+  }
+  .colimn1{
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .linkstags{
+    font-size: 15px; color: white; text-decoration: none; padding: 20px;
+  }
+  .emial-footer{
+    float: none; width: 80%; text-align: center; align-items: center;
+  }
+  .footerlogo{
+    width: 200px;
+  }
+  .footertext{
+    text-align: center;
+  }
+  .colimn2{
+    width: 50%; padding: 0 40px;
+  }
+  .colimn3{
+    width: 50%; padding: 0 20px;
+  }
+  .headingfooter{
+    text-align: left; color: #7E50CA; font-size: 20px;
+  }
+ 
+  .rowinner img{
+    padding-right: 10px;
+  }
+  .rowinner a{
+    font-size: 12px; color: white; text-decoration: none;
+  }
+  .rowinner1{
+    display: flex; flex-wrap: wrap; flex-direction: row; padding-top: 10px;
+  }
+  .rowinner1 img{
+    padding-right: 10px;
+    width: 30px;
+    align-items: center;
+  }
+  .rowinner1 span{
+    font-size: 12px; color: white; text-decoration: none;
+  }
+  .footeremail{
+    float: right; background-color: #373737; padding: 20px; width: 220px; border: none; border-radius: 40px; margin-right: 20px;
+  }
+  .footeremail::placeholder{
+    font-size: 15px;
+    color: white;
+  }
+  .greyline{
+    width: 100%; height: 1px; background-color: #FFFFFF47;
+  }
+}
+
+@media (max-width: 450px){
+  .colimn2{
+    width: 100%; align-items: center; text-align: center; margin: 0 auto; 
+  }
+  .colimn3{
+    width: 100%;
+  }
+  .headingfooter {
+    text-align: center;
+  }
+  .col-link{
+    width: 115px;
+    margin: 0 auto;
+    justify-content: center;
+
+  }
+  .col-link1{
+    width: 235px;
+    margin: 0 auto;
+    justify-content: center;
+
+  }
+  .linkstag{
+    width: 100%;
+  }
+  .linkstags{
+    width: 80%;
+    padding: 13px;
+  }
+  .footeremail{
+    float: none;
+    width: 320px;
+  }
+} 
