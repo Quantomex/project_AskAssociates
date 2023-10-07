@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Kdam-Thmor;
+  font-weight: 400;
+  src: url(../fonts/Kdam-Thmor.ttf);
+}
 /*------ Variables ------*/
 :root {
   --base-shade-1: #7E50CA;
@@ -27,7 +32,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.fontset{
+  font-family: Kdam-Thmor;
+  font-size: 85px;
+}
 *:not(i) {}
 
 html {
@@ -232,6 +240,7 @@ nav ul a:hover {
 
 /*------ Section: Hero ------*/
 section.hero {
+  height: 100vh;
   background-color: #292929;
   display: grid;
   grid-template-columns: 5fr 7fr;
@@ -252,6 +261,8 @@ section.hero {
 
 .hero-content p {
   text-align: justify;
+  font-size: 22px;
+  line-height: 35px;
 }
 
 .hero-img img {
@@ -313,6 +324,14 @@ section.hero {
 .features .column:hover i {
   background-color: var(--white-shade-1);
   color: var(--base-shade-1);
+}
+.column:hover {
+  transform: scale(1.05); /* Adjust the value to control the zoom level */
+  transition: all 0.5s;
+}
+.column1:hover {
+  transform: translateY(-15px); /* Adjust the value to move it up by desired amount */
+  transition: all 0.5s;
 }
 
 /*------ Section: Courses ------*/
@@ -674,12 +693,18 @@ footer p {
 }
 
 .indvidualTeam {
+  filter: grayscale(100%); /* Apply 100% grayscale by default */
+  transition: filter 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.indvidualTeam:hover {
+  filter: grayscale(0%); /* Remove grayscale on hover (0% means no grayscale) */
+  scale: 1.05;
+  transition: scale 0.4s;
+}
 .teampersonHead {
   color: #7E50CA;
   font-family: Open Sans;
@@ -794,6 +819,7 @@ footer p {
   height: 375px;
   flex-shrink: 0;
 }
+
 
 .servicecolumn p span {
   color: #7E50CA;
@@ -948,3 +974,232 @@ footer p {
 }
 
 /* Akram */
+
+
+
+
+/* BACKGROUND START */
+.area{
+  background: transparent;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100vh;
+  z-index: 1;
+  position: absolute;
+  
+ 
+}
+
+.circles{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 25px;
+  border-radius: 50%;
+     background: #FFE7FF;
+     box-shadow: 4px 4px 25.25px 0px #ffffff;
+
+  height: 25px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #ffffff;
+  border-radius: 50%;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #ffffff;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 15px;
+  height: 15px;
+  background: #FFE7FF;
+  box-shadow: 4px 4px 25.25px 0px #ffffff;
+  animation-delay: 0s;
+  border-radius: 50%;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 10px;
+  background: #FFE7FF;
+  box-shadow: 4px 4px 25.25px 0px #ffffff;
+  height: 10px;
+  border-radius: 50%;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 15px;
+  height: 15px;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #F500F5;
+  border-radius: 50%;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 16px;
+  height: 16px;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #F500F5;
+  border-radius: 50%;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  border-radius: 50%;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #F500F5;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #F500F5;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 10px;
+  background: #7e50ca;
+  box-shadow: 4px 4px 25.25px 0px #F500F5;
+  border-radius: 50%;
+  height: 10px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(-1000px) rotate(0deg);
+      opacity: 1;
+      border-radius: 100%;
+  }
+
+  100%{
+      transform: translateY(0px) rotate(720deg);
+      opacity: 0;
+      border-radius: 100%;
+  }
+
+}
+.rowfooter{
+  display: flex; flex-direction: row; flex-wrap: wrap; padding: 20px 100px;
+}
+.colimn1{
+  width: 28%;
+}
+.footerlogo{
+  width: 400px;
+}
+.footertext{
+  text-align: left;
+}
+.colimn2{
+  width: 20%; padding: 0 80px;
+}
+.colimn3{
+  width: 40%; padding: 0 20px;
+}
+.headingfooter{
+  text-align: left; color: #7E50CA; font-size: 25px;
+}
+.rowinner{
+  display: flex; flex-wrap: wrap; flex-direction: row; padding-top: 10px;
+}
+.rowinner img{
+  padding-right: 10px;
+}
+.rowinner a{
+  font-size: 20px; color: white; text-decoration: none;
+}
+.rowinner1{
+  display: flex; flex-wrap: wrap; flex-direction: row; padding-top: 10px;
+}
+.rowinner1 img{
+  padding-right: 10px;
+  width: 40px;
+  align-items: center;
+}
+.rowinner1 a{
+  font-size: 20px; color: white; text-decoration: none;
+}
+.footeremail::placeholder{
+  font-size: 20px;
+  color: white;
+}
+.triangleclient{
+  position: absolute; bottom: -25px; left: 25px;
+}
+.imagecllient{
+  display: flex; flex-direction: row; align-items: center; margin-top: 50px;
+}
+.imagecllient img{
+  width: 83px; height: 83px; border-radius: 50%;
+}
+
+.imagecllient span{
+  font-size: 28px; font-weight: 600; padding: 24px; color: white;
+}
+.clientcolumn:hover{
+  transform: translateY(-10px); /* Adjust the value to move it up by desired amount */
+  transition: all 0.5s;
+}
+.Glimpseround-column:hover {
+  transform: scale(1.1); /* Adjust the value to control the zoom level */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}

@@ -13,6 +13,7 @@
     rel="stylesheet">
   <!------ Stylesheet ------>
   <link rel="stylesheet" href="./css/style.css" />
+
   <!------ Queries ------>
   <link rel="stylesheet" href="./css/queries.css" />
 </head>
@@ -50,7 +51,22 @@
       </ul>
     </nav>
   </header>
-  <img src="./images/Rectangle.png" style="position: absolute; width: 1000px;">
+  <img src="./images/Rectangle.png" style="position: absolute; width: 1200px;">
+
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
 
   <!------ Section: Hero ------>
   <section class="hero" id="home">
@@ -60,7 +76,7 @@
       <img src="./images/Group.png" />
     </div>
     <div class="hero-content">
-      <h1>We have <span style="color: #7E50CA;">Ideas</span></h1>
+      <h1 class="fontset">We have <span style="color: #7E50CA;">Ideas</span></h1>
       <p>
         At Quantomex, we are a passionate team of creative minds dedicated
         to delivering outstanding UI and UX design solutions for businesses
@@ -93,15 +109,15 @@
         </div>
         <div> <img class="serviceImg" src="./images/Services.png" alt=""></div>
         <div class="servicecolumn">
-            <p class="r1">Mobile app design <span>& development</span></p>
-            <p class="r2">Website design <span>& development</span></p>
-            <p class="r3">Customize software design <span>& development</span></p>
-          </div>
+          <p class="r1">Mobile app design <span>& development</span></p>
+          <p class="r2">Website design <span>& development</span></p>
+          <p class="r3">Customize software design <span>& development</span></p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   <!------ Our Services Section End ------>
-  
+
   <!------ Why choose us Section Start ------>
 
   <section class="features" id="features">
@@ -111,7 +127,7 @@
     </p>
     <h2>Why Choose Us</h2>
     <div class="underheading"></div>
-    
+
     <div class="row centerflex">
       <div class="column1">
         <div class="padding-20">
@@ -335,15 +351,58 @@
             Ipsum has been the industry's standard
             dummy text ever since the 1500s, when
           </p>
-          <div style="position: absolute; bottom: -25px; left: 25px;">
+          <div class="triangleclient">
             <img src="./images/triangle.png" alt="">
           </div>
         </div>
-        <div style="display: flex; flex-direction: row; align-items: center; margin-top: 50px;">
-          <img src="./images/client.png" style="width: 83px; height: 83px; border-radius: 50%;" alt="">
-          <span style="font-size: 28px; font-weight: 600; padding: 24px; color: white;">Tabish waheed</span>
+        <div class="imagecllient">
+          <img src="./images/client.png"  alt="">
+          <span>Tabish waheed</span>
         </div>
-
+      </div>
+      <div class="clientcolumn">
+        <div class="Glimpse_inerdev">
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <p>
+            Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when
+          </p>
+          <div class="triangleclient">
+            <img src="./images/triangle.png" alt="">
+          </div>
+        </div>
+        <div class="imagecllient">
+          <img src="./images/client.png"  alt="">
+          <span>Tabish waheed</span>
+        </div>
+      </div>
+      <div class="clientcolumn">
+        <div class="Glimpse_inerdev">
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <i class="fas fa-star stars"></i>
+          <p>
+            Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when
+          </p>
+          <div class="triangleclient">
+            <img src="./images/triangle.png" alt="">
+          </div>
+        </div>
+        <div class="imagecllient">
+          <img src="./images/client.png"  alt="">
+          <span>Tabish waheed</span>
+        </div>
       </div>
 
     </div>
@@ -452,45 +511,69 @@
   <!-- Glimpse Section End  -->
 
   <!------ Footer ------>
-  <footer>
-    <div class="row footer-about">
-      <h3>Study Smart</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-        sunt reprehenderit quaerat esse unde, fuga quisquam quibusdam, in
-        distinctio necessitatibus nam, quae non tempore illo perferendis
-        facere inventore. Blanditiis, reiciendis.
-      </p>
-      <div class="social-links">
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-facebook-f"></i>
-        </a>
+  <div style="background-color: #222222;">
+    <div class="rowfooter">
+      <div class="colimn1">
+        <img src="./images/Logo.png" class="footerlogo" alt="">
+        <p class="footertext">Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when
+        </p>
+      </div>
+      <div class="colimn2">
+        <h3 class="headingfooter">Links</h3>
+        <div class="rowinner">
+          <img src="./images/Ok.png" alt="">
+          <a href="">About us</a>
+        </div>
+        <div class="rowinner">
+          <img src="./images/Ok.png" alt="">
+          <a href="">Contact us</a>
+        </div>
+        <div class="rowinner">
+          <img src="./images/Ok.png" alt="">
+          <a href="">Career</a>
+        </div>
+        <div class="rowinner">
+          <img src="./images/Ok.png" alt="">
+          <a href="">Case studies</a>
+        </div>
+        <div class="rowinner">
+          <img src="./images/Ok.png" alt="">
+          <a href="">Get a quote</a>
+        </div>
+      </div>
+      <div class="colimn3">
+        <h3 class="headingfooter">Contact info</h3>
+        <div class="rowinner1">
+          <img src="./images/phone.png" alt="">
+          <a >+92349098765</a>
+        </div>
+        <div class="rowinner1">
+          <img src="./images/location.png" alt="">
+          <a >Lorem Ipsum is simply dummy text</a>
+        </div>
+        <div class="rowinner1">
+          <img src="./images/email.png" alt="">
+          <a>Quantomex@gmail.com</a>
+        </div>
       </div>
     </div>
-    <div class="row footer-contact">
-      <div class="column">
-        <h4>Phone No</h4>
-        <p>+12 123456</p>
-      </div>
-      <div class="column">
-        <h4>Phone No</h4>
-        <p>+12 123456</p>
-      </div>
-      <div class="column">
-        <h4>Email</h4>
-        <p>studysmart@domain.com</p>
-      </div>
+    <div class="rowfooter" style="width: 100vw;"> 
+      <div style="float: left; width: 50%;">
+      <a href="" style="font-size: 20px; color: white; text-decoration: none; padding: 40px;">facebook</a>
+      <a href="" style="font-size: 20px; color: white; text-decoration: none; padding: 40px;">instagram</a>
+      <a href="" style="font-size: 20px; color: white; text-decoration: none; padding: 40px;">linkedin</a>
     </div>
-    <p class="footer-copyright">
-      Copyright &copy; 2021 Study Smart. All rights reserved.
-    </p>
-  </footer>
+    <div style="float: right; width: 50%;">
+      <input type="text" class="footeremail" placeholder="Enter your email" style="float: right; background-color: #373737; padding: 20px; width: 350px; border: none; border-radius: 40px; margin-right: 80px;">
+    </div>
+    </div>
+<div style="width: 100%; height: 1px; background-color: #FFFFFF47;"> </div>
+<div> <p style="padding: 30px; text-align: center; font-size: 16px;">© Quantomex. All Rights Reserved</p></div>
+  </div>
+
   <!------ Script ------>
   <script src="./js/script.js"></script>
 </body>
