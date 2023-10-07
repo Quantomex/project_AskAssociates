@@ -280,6 +280,9 @@ section{
 height: 200.816px;
 flex-shrink: 0;
 }
+.moonelipse:hover{
+  rotate: 360deg;
+}
 #header-shape {
   position: absolute;
   top: 0;
