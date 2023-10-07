@@ -910,6 +910,20 @@ font-weight: 400;
 line-height: normal;
 
 }
+@media (max-width:1370px) {
+  
+  section.hero{
+    margin-bottom: 200px;
+
+  }
+  .hero-content {
+    width: 90%;
+}
+.column1{
+  width: 30%;
+
+}
+}
 @media (max-width:1300px) {
   .indvidualTeam {
     margin-top: 70px;
