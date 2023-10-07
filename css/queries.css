@@ -104,6 +104,10 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  
+  .footerlogo{
+    width: 200px;
+  }
   html {
     font-size: 46.87%;
   }
