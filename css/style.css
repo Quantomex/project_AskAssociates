@@ -296,7 +296,7 @@ flex-shrink: 0;
 
 .hero-content p {
   text-align: justify;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 35px;
 }
 
@@ -1341,7 +1341,7 @@ margin-left: 1px;
   font-size: 20px; color: white; text-decoration: none;
 }
 .rowinner1{
-  display: flex; flex-wrap: wrap; flex-direction: row; padding-top: 10px;
+  display: flex;  flex-direction: row; padding-top: 15px;
 }
 .rowinner1 img{
   padding-right: 10px;
