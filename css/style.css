@@ -688,6 +688,7 @@ footer p {
 .teamsmallText {
   color: #7E50CA;
   font-family: Open Sans;
+  text-align: center;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -882,7 +883,8 @@ footer p {
   width: 60%;
   margin-top: 90px;
   margin-left: 65px;
-  padding-right: 60px;
+  padding-right: 10px;
+  text-align: justify;
 }
 .aboutContent .teamImgRelative{
   width: 275px;
@@ -907,7 +909,7 @@ margin-bottom: 70px;
 }
 .aboutPara{
   color: #D9D9D9;
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
