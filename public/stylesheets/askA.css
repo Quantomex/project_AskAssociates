@@ -500,8 +500,8 @@ line-height: normal;
   width: 506px;
 height: 64px;
 flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid #F7CD1E;
+border-radius: 55px;
+border: 1px solid #49A16D;
 background: url("./img/Vector.svg") left no-repeat;
 
 padding-left:25px; 
@@ -517,12 +517,13 @@ padding-left:25px;
 }
 
 .searchButtonBlog{
-  border-radius: 5px;
-background: #F7CD1E;
+  outline: none;
+  border-radius: 55px;
+background: #49A16D;
 width: 131px;
 height: 45px;
 flex-shrink: 0;
-color: #000;
+color: #ffffff;
 font-family: 'Oswald', sans-serif;
 font-size: 20px;
 font-style: normal;
@@ -558,7 +559,9 @@ align-items: center;
 justify-content: center;
 /* margin-right: 25px; */
 /* margin-bottom: 50px; */
-
+width: 300px;
+min-height: 300px;
+position: relative;
 
   
 }
@@ -582,6 +585,13 @@ flex-shrink: 0;
   line-height: normal;
 }
 
+.bottomdataDiv{
+ 
+}
+.padd{
+  padding-left: 110px;
+  padding-right: 110px;
+}
 
 .bottomdataDiv,.headingdataDiv{
   display: flex;
@@ -620,6 +630,7 @@ flex-shrink: 0;
   flex-direction: row;
 
   align-items: center;
+  
 }
 .bottomdataDiv h3 svg{
   margin-left: 5px;
@@ -631,4 +642,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+.indvidualOurServices{
+  height: 100px;
 }
