@@ -300,6 +300,8 @@ line-height: normal;
   margin-top: 80px;
   padding-left: 115px;
   padding-right: 80px;
+  padding-top: 30px;
+  
 }
 .resultCircles{
   display: flex;
@@ -370,6 +372,7 @@ align-items: center;
 /* Guide */
 .guidence{
   padding-left: 85px;
+  padding-top: 70px;
 }
 .indvidualText{
 display: flex;
@@ -645,4 +648,67 @@ line-height: normal;
 }
 .indvidualOurServices{
   height: 100px;
+}
+/* slider */
+.h-400 {
+  height: 400px !important;
+  background: transparent;
+}
+.whitediv {
+  position: relative;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151);
+  width: 640px;
+  height: 258px;
+  border-radius: 10px;
+}
+.greendiv {
+  width: 196px;
+  height: 235px;
+  position: absolute;
+  z-index: 99;
+  top: -50px;
+  left: -100px;
+  background-color: #49A16D;
+}
+.imgeclient {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  border: 2px solid whitesmoke !important;
+  text-align: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  margin-top: 30px !important;
+}
+.clientname {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+.clientcustomer {
+  color: white;
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+.clienttextdiv {
+  width: 470px;
+  margin-left: 120px;
+  padding: 20px 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 24px;
+}
+.stars {
+  font-size: 13px;
+  padding: 20px 5px;
+  padding-bottom: 40px;
+  text-align: left;
+  color: #FBFF26;
+  align-items: left;
+}
+.indvidualOurServices {
+  height: 100px;
+  display: flex;
+  align-items: center;
 }

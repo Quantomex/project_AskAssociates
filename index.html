@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/stylesheets/askA.css">
     <title>Home</title>
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      :root {
+      --swiper-theme-color: #49A16D !important;
+  }
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: flex !important;
+    background: transparent;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -216,6 +250,91 @@
 </div>
 
 </div>
+<!-- Slider -->
+<div class="Results" style="background: rgba(73, 161, 109, 0.05)">
+  <h3 class="rH">What Our Clients Say</h3>
+  <h2 class="rHM">Testimonials</h2>
+  <div class="swiper mySwiper" style="background: rgba(73, 161, 109, 0.05)">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide h-400">
+        <div
+          class="whitediv">
+          <div
+            class="greendiv">
+            <img  class="imgeclient" src="./public/images/client.png" alt="">
+            <p class="clientname">Tabish waheed</p>
+            <p class="clientcustomer">Customer</p>
+          </div>
+          <div
+            class="clienttextdiv">
+            <p>“Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.”</p>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide h-400">
+        <div
+          class="whitediv">
+          <div
+            class="greendiv">
+            <img  class="imgeclient" src="./public/images/client.png" alt="">
+            <p class="clientname">Tabish waheed</p>
+            <p class="clientcustomer">Customer</p>
+          </div>
+          <div
+            class="clienttextdiv">
+            <p>“Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.”</p>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide h-400">
+        <div
+          class="whitediv">
+          <div
+            class="greendiv">
+            <img  class="imgeclient" src="./public/images/client.png" alt="">
+            <p class="clientname">Tabish waheed</p>
+            <p class="clientcustomer">Customer</p>
+          </div>
+          <div
+            class="clienttextdiv">
+            <p>“Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.”</p>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<!-- slider end  -->
 <!-- Guidence -->
       <div class="guidence">
         <div class="topText">
@@ -763,6 +882,7 @@
         </div>
       </div>
       <!-- slier -->
+      
       <!-- FAQ -->
       <div class="faq">
 <div class="faqText">
@@ -871,5 +991,18 @@
           </div>
         </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 </html>
