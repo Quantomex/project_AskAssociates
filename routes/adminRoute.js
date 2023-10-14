@@ -53,5 +53,8 @@ router.get('/tax', async (req , res) => {
 router.get('/aboutus', async (req , res) => {
   res.render('./otherpages/aboutus');
 });
-
+;
+router.get('/openposition', async (req , res) => {
+  res.render('./otherpages/workus');
+});
 module.exports = router;
