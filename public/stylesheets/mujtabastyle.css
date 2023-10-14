@@ -57,40 +57,46 @@
     text-align: left;
 
 }
-.input-labels{
+
+.input-labels {
     font-family: Open Sans;
-font-size: 18px;
-font-weight: 600;
-line-height: 25px;
-padding-left: 20px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    padding-left: 20px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
-.form-input-control{
+
+.form-input-control {
     width: 400px;
-height: 63px;
-top: 618px;
-left: 94px;
-border-radius: 60px;
-background-color: #49A16D0D;
-border: none;
-font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-padding: 0 30px;
+    height: 63px;
+    top: 618px;
+    left: 94px;
+    border-radius: 60px;
+    background-color: #49A16D0D;
+    border: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0 30px;
 
 }
+
 .form-input-control:focus {
-    outline: none; /* Remove the outline or border when the input is focused */
+    outline: none;
+    /* Remove the outline or border when the input is focused */
 }
-.form-input-control::placeholder{
+
+.form-input-control::placeholder {
     color: #B6B6B6;
 }
-.form-textarea-control{
+
+.form-textarea-control {
     width: 400px;
     height: 222px;
     top: 618px;
@@ -106,26 +112,31 @@ padding: 0 30px;
     text-align: left;
     padding: 20px 30px;
 }
-.form-textarea-control:focus{
+
+.form-textarea-control:focus {
     outline: none;
 }
-.annoucment{
+
+.annoucment {
     padding: 0 50px;
     margin-top: 100px;
     width: auto;
     height: 380px;
 }
-.size{
+
+.size {
     color: #49A16D;
     font-size: 23px;
 }
-.annount-div{
+
+.annount-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 2px 0;
 }
-.annoucment-text{
+
+.annoucment-text {
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 400;
@@ -134,7 +145,8 @@ padding: 0 30px;
     text-align: left;
     padding-left: 20px;
 }
-.form-submit-btn{
+
+.form-submit-btn {
     width: 121px;
     height: 57px;
     top: 1247px;
@@ -143,69 +155,78 @@ padding: 0 30px;
     border: 2px solid #49A16D;
     background: #49A16D;
     font-family: Open Sans;
-font-size: 18px;
-font-weight: 400;
-line-height: 25px;
-color: white;
-margin-top: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: white;
+    margin-top: 40px;
 }
-.form-submit-btn:hover{
+
+.form-submit-btn:hover {
     border: 2px solid #49A16D;
     background: white;
     color: #49A16D;
     transition: all 0.4s ease;
     cursor: pointer;
 }
-footer{
+
+footer {
     background-color: #353535;
 }
-.footer-row{
+
+.footer-row {
     display: flex;
     flex-direction: row;
     background-color: #353535;
     /* flex-wrap: wrap; */
 }
-.footer-column{
+
+.footer-column {
     padding: 40px;
 }
-.footertext{
+
+.footertext {
     color: white;
     font-family: Open Sans;
-font-size: 18px;
-font-weight: 400;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
 }
-.footerheading{
+
+.footerheading {
     font-family: Open Sans;
-font-size: 18px;
-font-weight: 600;
-line-height: 25px;
-letter-spacing: 0em;
-text-align: left;
-color: #49A16D;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #49A16D;
 }
-.footeranchor{
+
+.footeranchor {
     text-decoration: none;
     color: white;
     font-family: Open Sans;
-font-size: 18px;
-font-weight: 400;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
 }
-.w-10{
+
+.w-10 {
     width: 10%;
 }
 
-.w-30{
+.w-30 {
     width: 30%;
 }
 
-.w-25{
+.w-25 {
     width: 25%;
 }
-.footeremail{
+
+.footeremail {
 
     padding: 20px 10px;
     padding-right: 80px;
@@ -213,56 +234,157 @@ text-align: left;
     border: none;
     border-bottom: 1px solid white;
     font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-color: white;
-}
-.footeremail::placeholder{
     font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
-color: white;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
 }
-.footeremail:focus{
+
+.footeremail::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.footeremail:focus {
     outline: none;
 }
-.footersubmit{
+
+.footersubmit {
     border-radius: 60px;
     margin-top: 20px;
     background-color: white;
     padding: 10px 30px;
     color: #49A16D;
     font-family: Open Sans;
-font-size: 18px;
-font-weight: 600;
-line-height: 25px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
 }
-.footerline{
+
+.footerline {
     width: 100%;
     background-color: #FFFFFF;
     height: 1px;
 }
-.footercopyright{
+
+.footercopyright {
     text-align: center;
     font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0em;
-color: white;
-padding: 20px 0;
-margin-block-start: 0;
-margin-block-end: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: white;
+    padding: 20px 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 
 }
-.littleheading{
-font-size: 16px !important;
+
+.littleheading {
+    font-size: 16px !important;
+
+}
+
+.aboutcontainer {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.aboutinner {
+    position: relative;
+    width: 70%;
+    height: 922px;
+    align-items: center;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #49A16D;
+}
+
+.aboutimagediv {
+    height: 715px;
+
+    background-color: #49A16D;
+    position: absolute;
+    top: -30px;
+    left: -100px;
+}
+
+.aboutimagediv img {
+    position: relative;
+}
+
+.aboutname {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    padding: 2px 0;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.abouttitle {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 2px 0;
+    margin: 0;
+    color: #FFFFFF;
+    letter-spacing: 0em;
+}
+.innerabouttext{
+    width: 65%;
+    float: right;
+}
+.labouttext{
+    padding: 20px;
+    text-align: left;
+    font-family: Open Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+
+}
+.aboutdivline1{
+    
+    width: 298px;
+height: 6px;
+border-bottom-left-radius: 50px;
+border-top-left-radius: 50px;
+background-color: #316948;
+float: right;
+margin: 8px 0;
+
+margin-top: 30px;
+}
+.aboutdivline2{
+    width: 430px;
+    height: 6px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+background-color: #373737;
+float: right;
+margin: 8px 0;
+
+}
+.aboutdivline3{
+    width: 621px;
+    height: 11px;
+background-color: #49A16D;
+float: right;
+margin: 8px 0;
 
 }
