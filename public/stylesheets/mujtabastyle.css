@@ -129,10 +129,9 @@ justify-content: space-between;
 }
 
 .annoucment {
-    padding: 0 50px;
     margin-top: 100px;
-    width: auto;
-    height: 380px;
+    width: 100%;
+    height: auto;
 }
 
 .size {
@@ -608,6 +607,7 @@ margin: 8px 0;
     flex-direction: row;
     justify-content: space-between;
     margin: 80px;
+    align-items: center;
   
 }
 .hireHeading{
@@ -768,7 +768,16 @@ margin-top: 30px;
 }
 
 @media (max-width:710px) {
-
+.contactrow{
+    flex-direction: column-reverse;
+}
+.contactcolumn {
+    width: 100%;
+}
+.annoucment{
+    margin-top: 20px;
+    height: 300px;
+}
     .aboutimagediv {
         left: 35%;
         position: relative;
@@ -800,7 +809,13 @@ height: 1500px;    width: 90%;
 }
 }
 @media (max-width:510px) {
-
+    
+    .annoucment{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+        
     .aboutimagediv {
         left: 35%;
         position: relative;
