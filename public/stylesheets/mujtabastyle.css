@@ -53,7 +53,7 @@ justify-content: space-between;
 }
 
 .contactcolumn {
-    width: 50%;
+    width: 100%;
     padding: 20px 60px;
     height: auto;
 }
@@ -95,6 +95,7 @@ justify-content: space-between;
     letter-spacing: 0em;
     text-align: left;
     padding: 0 30px;
+    width: 80%;
 
 }
 
@@ -720,6 +721,12 @@ margin-top: 30px;
 .buttonsDone{
     display: flex; flex-direction: row; width:900px; padding: 30px opx; margin: 20px auto;
 }
+.wor{
+    display: flex; flex-direction: row;
+}
+.widthMe{
+    width: 50%;
+}
 @media (max-width:920px) {
     .companyformocf{
         width: 90%;
@@ -766,11 +773,23 @@ margin-top: 30px;
         width: 90%;
     }
 }
-
-@media (max-width:710px) {
-.contactrow{
-    flex-direction: column-reverse;
+@media (max-width:950px) {
+    .contactrow{
+        flex-direction: column-reverse;
+    }
+    .annoucment {
+        width: 500px;
+        height: 500px;
+        
+    }
+    .midd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
+@media (max-width:710px) {
+
 .contactcolumn {
     width: 100%;
 }
@@ -902,6 +921,24 @@ height: 1700px;    width: 90%;
     nav ul {
       top: 65.18px;
       height: calc(55vh - 65.18px);
+    }
+    .wor{
+        flex-direction: column;
+    }
+    .widthMe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-input-control{
+        width: 100%;
+    }
+    .annoucment{
+        width: 100%;
+        height: auto;
+    }
+    .form-textarea-control{
+        width: 100%;
     }
   }
   
