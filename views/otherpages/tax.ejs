@@ -1,0 +1,48 @@
+<%- include('../partials/head.ejs') %>
+<title>Tax</title>
+<%- include('../partials/body.ejs') %>
+   <div class="topimage">
+  
+    <div class="column-2">
+       <p>Apply for tax Rebate </p>
+       <p class="littleheading">Complete the following steps to apply for Tax Rebate</p>
+    </div>
+    <div class="column-2">
+        <p class="hometocontact"> Home > Apply for tax Rebate </p>
+    </div>
+   </div>
+   <div class="contactrow">
+    <div class="contactcolumn">
+     
+        <form action="">
+            <div class="wor" style="display: flex; flex-direction: row;">
+            <div style="width: 50%;"> 
+            <p class="input-labels">Name*</p>
+            <input type="text" name="name"  class="form-input-control" style="width: 70%;">
+            <p class="input-labels">PPS number*</p>
+            <input type="number" name="name"  class="form-input-control" style="width: 70%;">
+            <p class="input-labels">Email ID*</p>
+            <input type="email" name="name"  class="form-input-control" style="width: 70%;">
+        </div>
+        <div style="width: 50%;"> 
+            <p class="input-labels">Surname*</p>
+            <input type="text" name="name"  class="form-input-control" style="width: 70%;">
+            <p class="input-labels">Date of birth*</p>
+            <input type="date" name="name"  class="form-input-control" style="width: 70%;">
+            <p class="input-labels">Dependant relatives*</p>
+            <input type="text" name="name"  class="form-input-control" style="width: 70%;">
+            
+        </div>
+      
+    </div>
+    <input type="checkbox"> <span>I have read & agreed to the authorisation and the <span style="color: #49A16D;"> terms & conditions. </span></span>
+
+    <button type="submit" class="form-submit-btn">Submit </button>
+        </form>
+    </div>
+    <div class="contactcolumn">
+        <img class="annoucment" src="images/annoucment.png" alt="">
+      
+    </div>
+   </div>
+   <%- include('../partials/footer.ejs') %>

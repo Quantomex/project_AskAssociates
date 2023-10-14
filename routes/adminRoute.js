@@ -46,5 +46,7 @@ router.post('/admin/login', passport.authenticate('admin', {
   res.redirect('/admin/blog');
 });
 
-
+router.get('/tax', async (req , res) => {
+  res.render('./otherpages/tax');
+})
 module.exports = router;

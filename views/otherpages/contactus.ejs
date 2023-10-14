@@ -1,120 +1,52 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="stylesheets/contactuscss/contactus.css" />
-    <link rel="stylesheet" href="stylesheets/contactuscss/global.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Patua One:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="contact">
-      <img class="contact-child" alt="" src="/images/rectangle-29.png" />
+<%- include('../partials/head.ejs') %>
+<title>Contact us</title>
+<%- include('../partials/body.ejs') %>
 
-      <div class="contact-item"></div>
-      <div class="home">Home</div>
-      <div class="contact1">Contact</div>
-      <div class="contact2">Contact</div>
-      <div class="home1"><a style="color: white;" href="/">Home</a> </div>
-      <div class="services"><a style="color: white;" href="/">Services</a></div>
-      <div class="about-us"><a style="color: white;" href="/">About us</a></div>
-      <div class="order-company"><a  style="color: white;" href="/ordercompany">Order Company</a></div>
-      <div class="apply-for-tax"> <a  style="color: white;" href="/applyfortaxrebate">Apply For Tax Rebate</a> </div>
-      <div class="blog"><a  style="color: white;" href="/blog">Blog</a></div>
-      <div class="contact3"><a style="color: white;"  href="/contactus">Contact Us </a></div>
-      <div class="contact-inner"></div>
-      <img class="image-1-icon" alt="" src="/images/image-1.png" />
-
-      <div class="group-parent">
-        <div class="rectangle-parent">
-          <div class="group-child"></div>
-          <div class="explore">Explore</div>
-          <div class="get-in-touch">Get In Touch</div>
-          <div class="services1">Services</div>
-          <div class="email">Email</div>
-          <div class="enter-your-email">Enter your email address</div>
-          <div class="contact-us">Contact us</div>
-          <div class="contact-number">Contact number</div>
-          <div class="timings">Timings</div>
-          <div class="group-item"></div>
-          <div class="group-inner"></div>
-          <div class="subscribe">Subscribe</div>
-          <div class="line-div"></div>
-          <div class="ask-associate-all">
-            © 2023 Ask Associate. All Rights Reserved
-          </div>
-          <img class="image-1-icon1" alt="" src="/images/image-1.png" />
-
-          <div class="ask-associate-is-container">
-            <p class="ask-associate-is">
-              Ask Associate is a leading consultancy firm
-            </p>
-            <p class="ask-associate-is">
-              that provides simple yet effective company
-            </p>
-            <p class="ask-associate-is">
-              registration and accounting solutions to
-            </p>
-            <p class="ask-associate-is">enterprises in Ireland.</p>
-          </div>
-        </div>
-        <img class="facebook-icon" alt="" src="/images/facebook@2x.png" />
-
-        <img class="twitter-icon" alt="" src="/images/twitter@2x.png" />
-
-        <img class="linkedin-icon" alt="" src="/images/linkedin@2x.png" />
-      </div>
-      <img class="vector-icon" alt="" src="/images/vector.svg" />
-
-      <div class="rectangle-div"></div>
-      <div class="submit">Submit</div>
-      <img class="device-icon" alt="" src="/images/device.svg"  />
-
-      <img class="character-icon" alt="" src="/images/character.svg" />
-
-      <img class="paper-planes-icon" alt="" src="/images/Paper Plane.svg" />
-
-      <img class="icon" alt="" src="/images/icon.svg" />
-
-      <img class="envelope-icon" alt="" src="/images/envelope.svg" />
-
-      <div class="lets-talk">Let’s talk</div>
-      <div class="your-name">Your name</div>
-      <div class="contact-child1"></div>
-      <div class="email1">Email</div>
-      <div class="contact-child2"></div>
-      <div class="phone">Phone</div>
-      <div class="contact-child3"></div>
-      <div class="your-message">Your message</div>
-      <div class="contact-child4"></div>
-      <div class="enter-your-name">Enter your name</div>
-      <div class="enter-your-email1">Enter your email</div>
-      <div class="enter-your-number">Enter your number</div>
-      <div class="type-your-message">Type your message</div>
-      <div class="accountingaskassociates">accounting@ask.associates</div>
-      <div class="mon-fri">Mon - Fri: 9am - 6pm</div>
-      <div class="ask-associates-720-container">
-        <p class="ask-associate-is">
-          ASK Associates 720 Sheppard Ave - Unit # 3
-        </p>
-        <p class="ask-associate-is">Pickering ON, L1V 1G5</p>
-      </div>
-      <div class="div">+1(416)902-0308</div>
-      <img class="vector-icon1" alt="" src="/images/phone.svg" />
-
-      <img class="email-icon" alt="" src="/images/email.svg" />
-
-      <img class="vector-icon2" alt="" src="/images/location.svg" />
-
-      <img class="clock-icon" alt="" src="/images/clock.png" />
+   <div class="topimage">
+  
+    <div class="column-2">
+       <p> Contact </p>
     </div>
-  </body>
-</html>
+    <div class="column-2">
+        <p class="hometocontact"> Home > Contact </p>
+    </div>
+   </div>
+   <div class="contactrow">
+    <div class="contactcolumn">
+        <p class="contactheading">Let's talk</p>
+        <form action="">
+            <p class="input-labels">Your name</p>
+            <input type="text" name="name" placeholder="Enter Your name" class="form-input-control">
+            <p class="input-labels">Email</p>
+            <input type="text" name="name" placeholder="Enter Your email" class="form-input-control">
+            <p class="input-labels">Phone</p>
+            <input type="phone" name="name" placeholder="Enter Your number" class="form-input-control">
+            <p class="input-labels">Your message</p>
+            <textarea type="text" name="name" placeholder="Type Your message" class="form-textarea-control"  id="" cols="30" rows="10"></textarea> <br>
+            <button type="submit" class="form-submit-btn">Submit </button>
+        </form>
+    </div>
+    <div class="contactcolumn">
+        <img class="annoucment" src="/images/annoucment.png" alt="">
+        <div class="annount-div">
+            <i class="fas fa-phone size"></i>
+           <p class="annoucment-text"> +1(416)902-0308 </p>
+        </div>
+        <div class="annount-div">
+            <i class="fas fa-envelope size"></i>
+           <p class="annoucment-text"> accounting@ask.associates </p>
+        </div>
+        <div class="annount-div">
+            <i class="fas fa-map-marker-alt size"></i>
+           <p class="annoucment-text">ASK Associates 720 Sheppard Ave - Unit # 3
+            Pickering ON, L1V 1G5 </p>
+        </div>
+        <div class="annount-div">
+            <i class="fas fa-clock size"></i>
+           <p class="annoucment-text"> Mon - Fri: 9am - 6pm </p>
+        </div>
+    </div>
+   </div>
+   <%- include('../partials/footer.ejs') %>
+   

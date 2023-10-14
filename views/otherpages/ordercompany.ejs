@@ -1,47 +1,56 @@
-<!-- views/orderCompany.ejs -->
+<%- include('../partials/head.ejs') %>
+<title>Order Company</title>
+<%- include('../partials/body.ejs') %>
+    <div class="topimage">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Company</title>
-    <!-- Include your CSS and other necessary dependencies here -->
-</head>
-<body>
-    <h1>Order Company</h1>
+        <div class="column-2">
+            <p>Order Company</p>
+            <p class="littleheading">Form Your New Company</p>
+        </div>
+        <div class="column-2">
+            <p class="hometocontact"> Home > Order Company </p>
+        </div>
+    </div>
+    <form action="">
+        <div style="display: flex; flex-direction: row; width: 60%; padding: 30px 120px; margin: 0 auto;">
 
-    <form action="/addOrderCompany" method="post">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="c" style="display: flex; flex-direction: column; width: 50%;">
+                <p class="input-labels">Name*</p>
+                <input type="text" name="name" class="form-input-control" style="width: 50%;">
+            </div>
+            <div class="c" style="display: flex; flex-direction: column; width: 50%;">
+                <p class="input-labels">Company name*</p>
+                <input type="number" name="name" class="form-input-control" style="width: 50%;">
+            </div>
+        </div>
+                <div style="display: flex; flex-direction: row; width: 60%; padding: 30px 120px; margin: 0 auto;">
+
+
+            <div class="c" style="display: flex; flex-direction: column; width: 100%;">
+                <p class="input-labels">Address*</p>
+                <input type="email" name="name" class="form-input-control" style="width: 75%;">
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="companyName">Company Name</label>
-            <input type="text" class="form-control" id="companyName" name="companyName" required>
+                <div style="display: flex; flex-direction: row; width: 60%; padding: 30px 120px; margin: 0 auto;">
+
+
+            <div class="c" style="display: flex; flex-direction: column; width: 50%;">
+                <p class="input-labels">Phone number*</p>
+                <input type="text" name="name" class="form-input-control" style="width: 50%;">
+            </div>
+            <div class="c" style="display: flex; flex-direction: column; width: 50%;">
+                <p class="input-labels">Email address*</p>
+                <input type="number" name="name" class="form-input-control" style="width: 50%;">
+            </div>
         </div>
+        <div style="display: flex; flex-direction: row; width: 60%; padding: 30px 120px; margin: 0 auto;">
 
-        <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" name="address" required>
+            <div style="float: right;">
+                <button type="submit" class="form-submit-btn">Previous</button>
+                <button type="submit" class="form-submit-btn">Submit</button>
+            </div>
         </div>
-
-        <div class="form-group">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
-        </div>
-
-        <div class="form-group">
-            <label for="emailAddress">Email Address</label>
-            <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
-        </div>
-
-      
-
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
-    <!-- Include your JavaScript and other necessary dependencies here -->
-</body>
-</html>
+    <%- include('../partials/footer.ejs') %>
