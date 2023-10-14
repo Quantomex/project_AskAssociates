@@ -49,6 +49,11 @@ router.post('/admin/login', passport.authenticate('admin', {
 router.get('/tax', async (req , res) => {
   res.render('./otherpages/tax');
 });
+
+router.get('/aboutus', async (req , res) => {
+  res.render('./otherpages/aboutus');
+});
+;
 router.get('/openposition', async (req , res) => {
   res.render('./otherpages/workus');
 });
