@@ -5,7 +5,6 @@
 .topimage {
     display: flex;
     flex-direction: row;
-    background-image: url(/images/Rectangle\ 29.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

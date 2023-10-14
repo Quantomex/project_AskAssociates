@@ -33,7 +33,7 @@ nav {
     /* padding-top: 20px; */
 }
 nav a#logo img {
-    
+    margin-left: 30px;
 margin-top: 30px;}
   
   
@@ -42,7 +42,16 @@ margin-top: 30px;}
   }
   
   nav ul li a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open' Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    line-height: 21.79px;
+    position: relative; 
+  }
+
+  nav ul li a:hover {
+    font-family: 'Open' Sans;
     color: white;
   }
   
@@ -50,7 +59,27 @@ margin-top: 30px;}
   #ham-menu {
     display: none;
   }
-  
+  nav ul li a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; /* Adjust the height of the line as needed */
+    background-color: white; /* Change the color of the line as needed */
+    position: absolute;
+    
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0); /* Initially, the line is not visible */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+nav ul li a:hover:after,
+
+nav ul li a.active:after {
+    transform: scaleX(1); /* Display the line on hover and for the active link */
+}
+
   nav ul.active {
     left: 0;
   }
@@ -71,11 +100,16 @@ margin-top: 30px;}
   nav ul a:hover {
     color: var(--purple-shade-1);
   }
-  
+  .navbar23{
+    background-image: url(/images/Rectangle\ 29.png);  background-repeat: no-repeat;
+background-size: cover;
+  }
   .sticky nav ul a:hover {
     color: var(--base-shade-1);
   }
-
+.prelative{
+  position: relative; 
+}
 
   /* Header/Hero Section */
 a{
@@ -499,7 +533,7 @@ line-height: normal;
 
 /* Blog */
 .searchBlogDetail{
-  margin-left: 176px;
+  margin-left: 20px;
   width: 506px;
 height: 64px;
 flex-shrink: 0;
@@ -511,12 +545,18 @@ padding-left:25px;
 
 
 }
+.mr-20{
+  margin: 20px !important;
+}
 .searchBlogDetail input{
   width: 70%;
   height: 100%;
   font-size:x-large;
   border: none;
   outline: none;
+}
+.mr-1{
+  margin-right: 20px;
 }
 
 .searchButtonBlog{
@@ -550,6 +590,7 @@ line-height: normal;
 }
 
 .dataDivContainer{
+  margin: 20px 0;
   border-radius: 10px;
 background: #FFF;
 box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.12);
@@ -713,3 +754,6 @@ line-height: normal;
   align-items: center;
 }
 
+.searchAndSelect{
+  padding: 20px 0;
+}
