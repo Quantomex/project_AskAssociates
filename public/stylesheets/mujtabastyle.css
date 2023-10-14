@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .topimage {
     display: flex;
     flex-direction: row;
@@ -6,14 +10,17 @@
     background-size: cover;
     width: 100vw;
     height: 432px;
+justify-content: space-between;
+
 }
 
 .column-2 {
     height: 432px;
-    width: 50%;
+    /* width: 50%; */
     height: 100%;
-    padding-left: 85px;
-    padding-top: 216px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 
 }
 
@@ -23,6 +30,9 @@
     font-size: 32px;
     font-weight: 400;
     line-height: 39.01px;
+    padding-left: 40px;
+    padding-right: 40px;
+
 }
 
 .hometocontact {
@@ -265,4 +275,192 @@ margin-block-end: 0;
 .littleheading{
 font-size: 16px !important;
 
+}
+
+.leftHead{
+    color: #FFF;
+  text-align: left;
+  font-family: Patua One;
+  font-size: 32px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+  .leftPara{
+    color: #E2E2E2;
+    font-family: Open Sans;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+  }
+
+  /* dropdown */
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.custom-dropdown12 {
+    position: relative;
+    display: inline-block;
+}
+.custom-dropdown12 p {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 170px;
+    border: 1px solid #49A16D;
+    color: #49A16D;
+    margin-bottom: 0;
+    border-radius: 5px;
+}
+.custom-dropdown p {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+    border: 1px solid #49A16D;
+    color: #49A16D;
+    margin-bottom: 0;
+    border-radius: 5px;
+
+}
+.custom-dropdown p:hover{
+    background-color: #49A16D;
+    color: white;
+}
+.paraedit {
+    width: 80px !important;
+    margin-right: 20px !important;
+}
+.paraedit:hover{
+    background-color: #49A16D;
+    color: white;
+    transition: all 0.3s ;
+}
+.custom-dropdown .dropdown-options {
+    position: absolute;
+    top: 100%;
+    font-family: 'Open Sans', sans-serif;
+    left: 0;
+    z-index: 1;
+    display: none;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+.custom-dropdown .dropdown-options li {
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.custom-dropdown .dropdown-options li:hover {
+    background-color: #49A16D;
+    color: white;
+    border-radius: 10px;
+}
+.custom-dropdown.open .dropdown-options {
+    display: block;
+}
+.dropdownColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hireDropAndText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px;
+  
+}
+.hireHeading{
+    color: #49A16D;
+font-family: Open Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.jobBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.jobIndvidual{
+    width: 502px;
+min-height: 250px;
+flex-shrink: 0;
+padding: 15px;
+border-radius: 10px;
+border: 1px solid #49A16D;
+background: rgba(73, 161, 109, 0.05);
+position: relative;
+border-left: 10px solid #49A16D;
+}
+
+.jobTitle{
+    display: flex;
+    color: #000;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+align-items: center;
+}
+
+.jobText{
+    color: #000;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.postDetailJob{
+    color: #C7C6C6;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
+.bottomJob{
+    /* position: absolute; */
+    /* bottom: 0; */
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+.spec{
+    background: #49A16D;
+    color: #FFF !important;
+    
+}
+.jobButton{
+    display: flex;
+    float: right;
+    gap: 10px;
+}
+.noiam{
+    padding-left: 10px;
 }

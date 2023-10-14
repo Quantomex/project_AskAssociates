@@ -1,0 +1,121 @@
+
+<%- include('../partials/head.ejs') %>
+<title>Contact us</title>
+<%- include('../partials/body.ejs') %>
+
+   <div class="topimage">
+  
+    <div class="column-2">
+       <p class="leftHead"> Open Positions </p>
+       <p class="leftPara">Do you want to help us to shape the future? Check out our positions and join us on our mission to turn this challenge into an opportunity.</p>
+    </div>
+    <div class="column-2">
+        <p class="hometocontact"> Home > Contact </p>
+    </div>
+   </div>
+  <div class="hireDropAndText">
+    <div><h2 class="hireHeading">We are hiring</h2></div>
+    <div class="dropdownColumn">
+        <div class="custom-dropdown">
+            <p>Job family <i class="fa fa-chevron-down noiam" style=" float: right;" aria-hidden="true"></i></p>
+            <ul class="dropdown-options">
+                <li data-value="/signup/teacher">Register As Teacher</li>
+                <li data-value="/signup/student">Register As Student</li>
+            </ul>
+        </div>
+        <div class="custom-dropdown okesh" id="tDrop">
+            <p>Experience level <i class="fa fa-chevron-down noiam" style=" float: right;" aria-hidden="true"></i></p>
+            <ul class="dropdown-options ">
+                <li data-value="/signup/teacher">Register As Teacher</li>
+                <li data-value="/signup/student">Register As Student</li>
+            </ul>
+        </div>
+       
+    </div>
+  </div>
+  <div class="jobBox">
+   
+    <div class="jobIndvidual">
+        <h4 class="jobTitle"><img class="imgISH marginRight" src="/images/askASwevices.svg" alt="">
+            Job title        </h4>
+            <p class="jobText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the. lorem50</p>
+            <div class="bottomJob">
+            <p class="postDetailJob">Posted on: 27 Sep,2021   </p>
+           <div class="jobButton">
+                        <a href=""><p class="serviceButton">Read More</p></a>
+                        <a href=""><p class="serviceButton spec">Read More</p></a>
+                    </div>
+        </div>
+
+    </div>
+    <div class="jobIndvidual">
+        <h4 class="jobTitle"><img class="imgISH marginRight" src="/images/askASwevices.svg" alt="">
+            Job title        </h4>
+            <p class="jobText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+            <div class="bottomJob">
+            <p class="postDetailJob">Posted on: 27 Sep,2021   </p>
+           <div class="jobButton">
+                        <a href=""><p class="serviceButton">Read More</p></a>
+                        <a href=""><p class="serviceButton spec">Read More</p></a>
+                    </div>
+        </div>
+
+    </div>
+    <div class="jobIndvidual">
+        <h4 class="jobTitle"><img class="imgISH marginRight" src="/images/askASwevices.svg" alt="">
+            Job title        </h4>
+            <p class="jobText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+            <div class="bottomJob">
+            <p class="postDetailJob">Posted on: 27 Sep,2021   </p>
+           <div class="jobButton">
+                        <a href=""><p class="serviceButton">Read More</p></a>
+                        <a href=""><p class="serviceButton spec">Read More</p></a>
+                    </div>
+        </div>
+
+    </div>
+
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdown = document.querySelector(".custom-dropdown");
+        const options = document.querySelectorAll(".dropdown-options li");
+        dropdown.addEventListener("click", function () {
+            dropdown.classList.toggle("open");
+        });
+        options.forEach((option) => {
+            option.addEventListener("click", function () {
+                const value = option.getAttribute("data-value");
+                if (value !== null && value !== undefined) {
+                    window.location.href = value;
+                }
+            });
+        });
+        
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdownt = document.getElementById("tDrop");
+        const optionsm = document.querySelectorAll(".okesh li");
+        dropdownt.addEventListener("click", function () {
+            dropdownt.classList.toggle("open");
+        });
+        options.forEach((option) => {
+            option.addEventListener("click", function () {
+                const value = option.getAttribute("data-value");
+                if (value !== null && value !== undefined) {
+                    window.location.href = value;
+                }
+            });
+        });
+        
+    });
+    
+  
+      function navigateToRegistration(value) {
+            if (value !== "0") {
+                window.location.href = value;
+            }
+        }
+    </script>
+   <%- include('../partials/footer.ejs') %>
+   
