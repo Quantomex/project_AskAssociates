@@ -496,6 +496,7 @@ margin: 8px 0;
     .footer-row{
         align-items: center;
         text-align: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .footer-column{
@@ -689,4 +690,23 @@ margin-top: 30px;
 }
 .noiam{
     padding-left: 10px;
+}
+
+@media (max-width:615px) {
+    
+    .topimage, .hireDropAndText{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .jobIndvidual{
+        width: 85%;
+    }
+}
+@media (max-width:490px) {
+    .bottomJob{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
