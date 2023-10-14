@@ -356,6 +356,7 @@ footer {
 .innerabouttext{
     width: 65%;
     float: right;
+    height: auto;
 }
 .labouttext{
     padding: 20px;
@@ -708,4 +709,71 @@ margin-top: 30px;
         align-items: center;
         justify-content: center;
     }
+}
+
+@media (max-width:710px) {
+
+    .aboutimagediv {
+        left: 35%;
+        position: relative;
+        width: 202px;
+        align-items: center;
+    }
+.aboutinner{
+height: 1500px;    width: 90%;
+    
+}
+.innerabouttext {
+    width: 98%;
+}
+}
+@media (max-width:710px) {
+
+    .aboutimagediv {
+        left: 35%;
+        position: relative;
+        width: 202px;
+        align-items: center;
+    }
+.aboutinner{
+height: 1500px;    width: 90%;
+    
+}
+.innerabouttext {
+    width: 98%;
+}
+}
+@media (max-width:510px) {
+
+    .aboutimagediv {
+        left: 35%;
+        position: relative;
+        width: 202px;
+        align-items: center;
+    }
+.aboutinner{
+height: 1700px;    width: 90%;
+    
+}
+.innerabouttext {
+    width: 98%;
+}
+.aboutdivline1{
+    width: 200px;
+}
+
+.aboutdivline2{
+    width: 230px;
+}
+
+.aboutdivline3{
+    width: 280px;
+}
+}
+
+@media (max-width:375px) {
+    .aboutinner{
+        height: 1900px;    
+            
+        }
 }
