@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/stylesheets/askA.css">
-    <title>Home</title>
+<%- include('../partials/head.ejs') %>
+<title>Home</title>
+
+
     <style>
       .swiper {
         width: 100%;
@@ -37,44 +34,14 @@
     background: transparent;
 }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-</head>
-<body>
+    
+    <%- include('../partials/body.ejs') %>
     <header>
-        <img class="headerImg" src="./public/images/askA_header.svg" alt="">
+        <img class="headerImg" src=" /images/askA_header.svg" alt="">
 
-    <nav>
-        <a href="#home" id="logo"><img src="./public/images/askA_logo_nav.svg" class="navbar-image-width" alt=""></a>
-        <i class="fas fa-bars" id="ham-menu"></i>
-        <ul id="nav-bar">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#features">Services</a>
-          </li>
-          <li>
-            <a href="#courses">About us</a>
-          </li>
-          <li>
-            <a href="#testimonial">Order Company</a>
-          </li>
-          <li>
-            <a href="#download-app">Apply for tax Rebate</a>
-          </li>
-          <li >
-           
-            <a href="#download-app">Blog</a>
-
-          </li>
-          <li >
-           
-            <a href="#download-app">Contact</a>
-
-          </li>
-        </ul>
-      </nav>
+      
+        <%- include('../partials/navbar.ejs', { currentPage: 'home' }) %>
+  
       
       <div class="headerContent">
           <h1 class="headerHeading">
@@ -90,7 +57,7 @@
       </header>
       <div class="serviceAfterHeader">
 <div class="indivdualSh">
-<img class="imgISH" src="./public/images/askASwevices.svg" alt="">
+<img class="imgISH" src=" /images/askASwevices.svg" alt="">
 <h3>Start-Up Services</h3>
 <p class="paraSH">We support entrepreneurs to build their
   businesses by providing them with the
@@ -98,14 +65,14 @@
 </div>
 
 <div class="indivdualSh">
-  <img class="imgISH" src="./public/images/askASwevices.svg" alt="">
+  <img class="imgISH" src=" /images/askASwevices.svg" alt="">
   <h3>Start-Up Services</h3>
   <p class="paraSH">We provide our clients with the best accounting
     and financial services in the market.</p>
   </div>
 
   <div class="indivdualSh">
-    <img class="imgISH"  src="./public/images/askASwevices.svg" alt="">
+    <img class="imgISH"  src=" /images/askASwevices.svg" alt="">
     <h3>Start-Up Services</h3>
     <p class="paraSH">We offer risk and assurance services for new, as
       well as established businesses - to help them
@@ -115,10 +82,10 @@
 
       <div class="whoWeAre">
         <div  class="imgWWA" >
-          <img src="./public/images/whoWeAre.png" alt="">
+          <img src=" /images/whoWeAre.png" alt="">
 
         </div>
-<div class="WWAcontent">
+<div class="WWAcontent" >
   <h3 class="WWAHeadText">Who we are</h3>
         <h2 class="WWAheading">The best solutions for your business</h2>
         <p class="WWApara">TAx Associate is a provider of standardised and effective business solutions that can aid entrepreneurs and businesses to thrive. Our legal, business management, and accounting solutions are tailored to take your business forward.</p>
@@ -128,7 +95,7 @@
       
         
       </div>
-<div class="ourServicesMain">
+<div class="ourServicesMain" id="services">
   <div class="ourServcesTop">
     <h3 class="WWAHeadText extraMargin">What We Do</h3>
     <h2 class="WWAheading">Our Services</h2>
@@ -137,7 +104,7 @@
   
       <div class="ourServices">
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -146,7 +113,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -155,7 +122,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -164,7 +131,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -173,7 +140,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -182,7 +149,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -191,7 +158,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -200,7 +167,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -209,7 +176,7 @@
               </div>
           </div>
           <div class="indvidualOurServices">
-            <img class="imgISH marginRight"  src="./public/images/askASwevices.svg" alt="">
+            <img class="imgISH marginRight"  src=" /images/askASwevices.svg" alt="">
 
               <div class="contentOurServices">
                 <h4 class="COSHead">Financial Reporting</h4>
@@ -230,19 +197,19 @@
 <div class="resultCircles">
 
   <div class="indvidualCircles">           
-      <img class="imgISH marginRight" src="./public/images/askASwevices.svg" alt="">
+      <img class="imgISH marginRight" src=" /images/askASwevices.svg" alt="">
       <h3 class="resultIHeading">Dedicated experts</h3>
       <p class="resultIpara">Our team of dedicated professionals will be there to help you with your accounting and business needs.</p>
 
   </div>
   <div class="indvidualCircles">           
-    <img class="imgISH marginRight" src="./public/images/askASwevices.svg" alt="">
+    <img class="imgISH marginRight" src=" /images/askASwevices.svg" alt="">
     <h3 class="resultIHeading">Hassle-free process</h3>
     <p class="resultIpara">No complicated paperwork. Just send us your documents and we will handle the rest for you.</p>
 
 </div>
 <div class="indvidualCircles">           
-  <img class="imgISH marginRight" src="./public/images/askASwevices.svg" alt="">
+  <img class="imgISH marginRight" src=" /images/askASwevices.svg" alt="">
   <h3 class="resultIHeading">Handle remotely</h3>
   <p class="resultIpara">Our clients can handle everything from company registration to accounting requirements remotely.</p>
 
@@ -261,7 +228,7 @@
           class="whitediv">
           <div
             class="greendiv">
-            <img  class="imgeclient" src="./public/images/client.png" alt="">
+            <img  class="imgeclient" src=" /images/client.png" alt="">
             <p class="clientname">Tabish waheed</p>
             <p class="clientcustomer">Customer</p>
           </div>
@@ -285,7 +252,7 @@
           class="whitediv">
           <div
             class="greendiv">
-            <img  class="imgeclient" src="./public/images/client.png" alt="">
+            <img  class="imgeclient" src=" /images/client.png" alt="">
             <p class="clientname">Tabish waheed</p>
             <p class="clientcustomer">Customer</p>
           </div>
@@ -309,7 +276,7 @@
           class="whitediv">
           <div
             class="greendiv">
-            <img  class="imgeclient" src="./public/images/client.png" alt="">
+            <img  class="imgeclient" src=" /images/client.png" alt="">
             <p class="clientname">Tabish waheed</p>
             <p class="clientcustomer">Customer</p>
           </div>
@@ -917,7 +884,7 @@
 </div>
 </div>
 <div class="faqImgs">
-<img src="./public/images/askAFAQ.svg" alt="">
+<img src=" /images/askAFAQ.svg" alt="">
 </div>
       </div>
 
@@ -931,7 +898,7 @@
    
     
         <div class="dataDivContainer">
-          <img class="imgContainer" src="./public/images/Rectangle 93.png" alt="">
+          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
           <div class="headingdataDiv">
             <h2>Paye Modernisation</h2>
           </div>
@@ -946,7 +913,7 @@
           </div>
         </div>
         <div class="dataDivContainer">
-          <img class="imgContainer" src="./public/images/Rectangle 93.png" alt="">
+          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
           <div class="headingdataDiv">
             <h2>Paye Modernisation</h2>
           </div>
@@ -961,7 +928,7 @@
           </div>
         </div>
         <div class="dataDivContainer">
-          <img class="imgContainer" src="./public/images/Rectangle 93.png" alt="">
+          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
           <div class="headingdataDiv">
             <h2>Paye Modernisation</h2>
           </div>
@@ -976,7 +943,7 @@
           </div>
         </div>
         <div class="dataDivContainer">
-          <img class="imgContainer" src="./public/images/Rectangle 93.png" alt="">
+          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
           <div class="headingdataDiv">
             <h2>Paye Modernisation</h2>
           </div>
@@ -1004,5 +971,4 @@
       },
     });
   </script>
-</body>
-</html>
+   <%- include('../partials/footer.ejs') %>
