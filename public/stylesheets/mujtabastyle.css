@@ -738,6 +738,11 @@ margin-top: 30px;
         width:90%
     }
 }
+@media (max-width:679px) {
+    .tow{
+        margin-bottom: 25px !important;
+    }
+}
 @media (max-width:615px) {
     
     .topimage, .hireDropAndText{
@@ -787,6 +792,36 @@ margin-top: 30px;
         align-items: center;
         justify-content: center;
     }
+    .indvidualOurServices{
+        flex-direction: column;
+        margin-top: 20px !important;
+    }
+    .contentOurServices{
+        border-left: none !important;
+        border-top: 1px #C7C6C6 solid;
+        padding-left: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        justify-items:center  !important;
+        text-align: center;
+
+
+      }
+      .ourServicesMain{
+        padding-bottom: 60px !important;
+      }
+      .ourServices{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .akospec{
+        width: 100px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+      }
+      .serviceButton{
+        width: auto !important;
+      }
 }
 @media (max-width:710px) {
 
@@ -879,6 +914,17 @@ height: 1700px;    width: 90%;
  
   }
   
+  @media (max-width:907px) {
+    .faq{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .faqImgs img{
+        margin-top: 30px;
+    }
+    
+  }
   @media only screen and (max-width: 767px) {
  
     #ham-menu {
@@ -915,6 +961,12 @@ height: 1700px;    width: 90%;
       height: 6rem;
       width: 6rem;
     }
+    .headerHeading{
+        width: 85% !important;
+    }
+    .headerPara{
+        width: 70% !important;
+    }
   }
   @media only screen and (max-width: 575px) {
   
@@ -940,5 +992,84 @@ height: 1700px;    width: 90%;
     .form-textarea-control{
         width: 100%;
     }
+    .Results{
+padding-left: 0 !important;
+display: flex;
+flex-direction: column;
+padding-right: 0 !important;
+width: 100% !important;
+align-items: center !important;
+justify-content: center !important;
+text-align: center;
+    }
+    .rHP{
+        width: 85% !important;
+    }
+    .clienttextdiv {
+        width: 100% !important;
+    }
+    .imgWWA img {
+        width: auto;
+        height: 230px !important;
+    }
+    .WWApara{
+        width: 90% !important;
+    }
+    .WWAcontent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .guidence{
+        padding-left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .faq{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .quickfaq {
+        width: 90% !important;
+    }
+    
+    .quickFaqQuick{
+        width: 90% !important;
+    }
+    .ourServcesTop {
+        text-align: center;
+        margin-left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .smallWidth{
+        width: 90% !important;
+        text-align: center;
+    }
+    .padd{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
   }
-  
+  @media (max-width:1075px) {
+    .imgWWA{
+        position:unset !important;
+        width: auto !important;
+        height: auto !important;
+        top: 0;
+    }
+    .WWAcontent{
+        position:unset !important;
+        margin-bottom: 40px;
+    }
+    .whoWeAre{
+     flex-direction: column !important;
+     align-items: center !important;
+     justify-content: center !important;
+     height: auto !important;
+    }
+  }

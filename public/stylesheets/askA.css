@@ -215,15 +215,24 @@ height: 39px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
+    position: relative;
   }
   .imgWWA{
     width: auto;
 height: 100%;
 flex-shrink: 0;
-margin-right: 40px
+position: absolute;
+left: 0;
+
+  }
+  .imgWWA img{
+    width: auto;
+    height: 100%;
   }
   .WWAcontent{
     margin-top: 30px;
+position: absolute;
+right: 30px;
   }
 
  .WWAHeadText{
@@ -282,6 +291,8 @@ margin-right: 40px
     margin-right: 115px;
     margin-left: 115px;
     padding-bottom: 75px;
+    align-items: center;
+    justify-content: center;
   }
   .extraMargin{
     margin-top: 50px;
@@ -478,7 +489,7 @@ line-height: normal;
 }
 /* faq */
 .faq{
-  margin-top: 200px;
+  margin-top: 270px;
   padding-top: 45px;
   padding-left: 115px;
   padding-right: 85px;
