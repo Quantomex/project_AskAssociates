@@ -1,36 +1,114 @@
-<nav>
-    <a href="/" id="logo"><img src=" /images/askA_logo_nav.svg" class="navbar-image-width" alt=""></a>
-    <i class="fas fa-bars" id="ham-menu"></i>
-    <ul id="nav-bar">
-      <li>
-        <a  class="<%= (currentPage === 'home') ? 'active' : '' %>"  href="/">Home</a>
-      </li>
-      <li>
-        <a    href="/#services">Services</a>
-      </li>
-      <li>
-        <a  class="<%= (currentPage === 'about') ? 'active' : '' %>"  href="/aboutus">About us</a>
-      </li>
-      <li>
-        <a  class="<%= (currentPage === 'ordercompany') ? 'active' : '' %>"  href="/ordercompany">Order Company</a>
-      </li>
-      <li>
-        <a  class="<%= (currentPage === 'tax') ? 'active' : '' %>"  href="/tax">Apply for tax Rebate</a>
-      </li>
-      <li >
-       
-        <a  class="<%= (currentPage === 'blog') ? 'active' : '' %>"  href="/blog">Blog</a>
+<style>
+  /*------ Header ------*/
+  .navbar1 {
+    width: 100%;
+    z-index: 99;
+    padding: 0 2rem;
+     background-color: var(--black-shade-1);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 
-      </li>
-      <li >
-       
-        <a  class="<%= (currentPage === 'career') ? 'active' : '' %>"  href="/openposition">Career</a>
-
-      </li>
-      <li >
-       
-        <a  class="<%= (currentPage === 'contact') ? 'active' : '' %>"  href="/contactus">Contact</a>
-
-      </li>
-    </ul>
-  </nav>
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  nav a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: white;
+    font-weight: 400;
+  }
+  nav ul a {
+    color: white;
+  }
+  nav ul li a {
+    font-family: 'Inter', sans-serif;
+  }
+  @media only screen and (max-width: 991px) {
+  nav ul a,
+  nav a#logo {
+      color: white;
+  }
+  }
+  @media only screen and (max-width: 767px) {
+  #ham-menu {
+    display: block;
+    color: white;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 18px;
+  }
+  nav ul {
+     background-color: #2F2F2F;
+     z-index: 9999;
+    position: fixed;
+    left: -100vw;
+    top: 100.4px;
+    height: calc(55vh - 70.4px);
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+    border-radius: 10px;
+  }
+  nav ul a {
+    font-size: var(--heading-font-size-3);
+  }
+  .sticky nav ul a {
+    color: var(--white-shade-1);
+  }
+  nav ul a:hover {
+    color: var(--base-shade-1);
+  }
+  }
+  @media only screen and (max-width: 575px) {
+  nav ul {
+    top: 85.18px;
+    height: calc(55vh - 25.18px);
+  }
+  }
+  </style>
+  <div class="navbar1">
+  <nav>
+      <a href="/" id="logo"><img src=" /images/askA_logo_nav.svg" class="navbar-image-width" alt=""></a>
+      <i class="fas fa-bars" id="ham-menu" ></i>
+      <ul id="nav-bar">
+        <li>
+          <a  class="<%= (currentPage === 'home') ? 'active' : '' %>"  href="/">Home</a>
+        </li>
+        <li>
+          <a    href="/#services">Services</a>
+        </li>
+        <li>
+          <a  class="<%= (currentPage === 'about') ? 'active' : '' %>"  href="/aboutus">About us</a>
+        </li>
+        <li>
+          <a  class="<%= (currentPage === 'ordercompany') ? 'active' : '' %>"  href="/ordercompany">Order Company</a>
+        </li>
+        <li>
+          <a  class="<%= (currentPage === 'tax') ? 'active' : '' %>"  href="/tax">Apply for tax Rebate</a>
+        </li>
+        <li >
+          <a  class="<%= (currentPage === 'blog') ? 'active' : '' %>"  href="/blog">Blog</a>
+        </li>
+        <li >
+          <a  class="<%= (currentPage === 'career') ? 'active' : '' %>"  href="/openposition">Career</a>
+        </li>
+        <li >
+          <a  class="<%= (currentPage === 'contact') ? 'active' : '' %>"  href="/contactus">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
