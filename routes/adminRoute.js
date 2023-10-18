@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const Admin = require('../models/Admin');
-
+const CaseStudy = require('../models/caseStudyModel');
 const {isAdmin} = require('../middleware/isAdmin');
 // Admin Signup
 router.get('/admin/signup', (req, res) => {
@@ -44,8 +44,17 @@ router.post('/admin/login', passport.authenticate('admin', {
   res.redirect('/admin/case-studies');
 });
 // Other Pages
-router.get('/', (req, res) => {
-  res.render('./pages/homepage')
-})
+router.get('/', async (req, res) => {
+  try {
+    // Fetch case studies from the database
+    const caseStudies = await CaseStudy.find();
+
+    // Render the homepage with case studies
+    res.render('./pages/homepage', { caseStudies });
+  } catch (error) {
+    console.error('Error fetching case studies:', error);
+    res.status(500).json({ message: 'Error fetching case studies', error: error.message });
+  }
+});
 
 module.exports = router;
