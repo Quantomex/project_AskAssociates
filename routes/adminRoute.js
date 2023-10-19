@@ -3,7 +3,7 @@ const router = express.Router();
 const passport = require('passport');
 const Admin = require('../models/Admin');
 const CaseStudy = require('../models/caseStudyModel');
-
+const Domain = require('../models/domainModel');
 const {isAdmin} = require('../middleware/isAdmin');
 // Admin Signup
 router.get('/admin/signup', (req, res) => {
@@ -50,12 +50,31 @@ router.get('/', async (req, res) => {
     // Fetch case studies from the database
     const caseStudies = await CaseStudy.find();
 
-    // Render the homepage with case studies
-    res.render('./pages/homepage', { caseStudies });
+    // Fetch domain counts
+    const domainCounts = {};
+    const domainNames = [
+      'Website Designed',
+      'Apps Developed',
+      'SEO',
+      'Happy Clients',
+      'AI & IOT solutions',
+      'Games Developed',
+      'Data Science projects',
+      'Other'
+    ];
+
+    for (const domainName of domainNames) {
+      const count = await CaseStudy.countDocuments({ domain: domainName });
+      domainCounts[domainName] = count;
+    }
+
+    // Render the homepage with case studies and domain counts
+    res.render('./pages/homepage', { caseStudies, domainCounts });
   } catch (error) {
     console.error('Error fetching case studies:', error);
     res.status(500).json({ message: 'Error fetching case studies', error: error.message });
   }
 });
+
 
 module.exports = router;

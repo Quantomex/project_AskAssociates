@@ -136,21 +136,6 @@ router.post('/deleteCaseStudy/:id', isAdmin, async (req, res) => {
 
 
 
-// Add this function to your code
-function renderAllDomainCounts(res, domainNames, counts) {
-    res.render('./admin/domainCount', { domainNames, counts });
-  }
-// Add this function to your code
-async function getDomainCounts(domainNames) {
-    const counts = {};
-  
-    for (const domainName of domainNames) {
-      const count = await CaseStudy.countDocuments({ domain: domainName });
-      counts[domainName] = count;
-    }
-  
-    return counts;
-  }
 
 // Route to get total count for all domains
 router.get('/domain-count/all', async (req, res) => {
