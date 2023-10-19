@@ -4,7 +4,8 @@ if (process.env.NODE_ENV !== "production") {
   //models will go here
   require('./models/Admin');
   require('./models/caseStudyModel');
-
+  require('./models/FormEntry');
+  require('./models/teamModel');
   const express = require("express");
   const MongoDBStore = require("connect-mongo");
   const mongoose = require("mongoose");
@@ -25,7 +26,9 @@ if (process.env.NODE_ENV !== "production") {
   // Routes will go here
   const adminRoutes = require('./routes/adminRoute');
   const caseStudyRoute = require('./routes/caseStudyRoute');
-  
+  const formRoute = require('./routes/getQuoteRoute');
+  const teamRoute = require('./routes/teamRoute');
+
   const store = new MongoDBStore({
     mongoUrl: mongoURi,
     secret,
@@ -114,7 +117,8 @@ if (process.env.NODE_ENV !== "production") {
   //Routes usage will go here
   app.use(adminRoutes);
   app.use(caseStudyRoute);
-  
+  app.use(formRoute);
+
   // Listen for the port Number
   app.listen(PORT, () => {
       console.log(`App is listening on http://localhost:${PORT}`);

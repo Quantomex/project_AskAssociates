@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Quote Submissions</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/OpForm.css">
+</head>
+<body>
+<div class="container">
+  <% include('../partials/flash.ejs') %>
+  <% if (getQuoteSubmissions.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <a style="margin-top: 20px;" href="/getQuote"><button>Back</button></a>
+          <th>Get Quote Submissions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% getQuoteSubmissions.forEach((submission, index) => { %>
+        <tr>
+          <td><strong>Submission <%= index + 1 %></strong></td>
+        </tr>
+        <tr>
+          <td><strong>Full Name:</strong> <%= submission.fullName %></td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong> <%= submission.email %></td>
+        </tr>
+        <tr>
+          <td><strong>Contact Number:</strong> <%= submission.contactNumber %></td>
+        </tr>
+        <tr>
+          <td><strong>Project Overview:</strong> <%= submission.projectOverview %></td>
+        </tr>
+        <tr>
+          <td>
+            <form action="/deleteQuote/<%= submission._id %>" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+  <p>No Get Quote submissions available.</p>
+  <% } %>
+</div>
+</body>
+</html>

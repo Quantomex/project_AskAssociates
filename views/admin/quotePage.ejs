@@ -7,18 +7,18 @@
 </head>
 <body>
     <h1>Get a Quote</h1>
-    <form action="/submit-quote" method="POST">
+    <form action="/submit" method="POST">
         <label for="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" required>
     
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
     
-        <label for="company">Company Name:</label>
-        <input type="text" id="company" name="company">
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber">
     
-        <label for="projectDescription">Project Description:</label>
-        <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+        <label for="projectOverview">Project Overview:</label>
+        <textarea id="projectOverview" name="projectOverview" rows="4" required></textarea>
         
         <button type="submit">Request Quote</button>
     </form>
