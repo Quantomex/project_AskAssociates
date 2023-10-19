@@ -76,5 +76,8 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/getquote', (req , res) => {
+  res.render('./admin/quotePage')
+})
 
 module.exports = router;
