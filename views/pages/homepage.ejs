@@ -268,53 +268,21 @@
       </div>
       <div class="aboutTeam">
         <div class="indvidualTeam">
-          <div class="teamImgRelative">
-            <img class="teamPersonImg" src="/images/team.png" alt="">
-          </div>
-          <div class="teampersonText">
-            <h2 class="teampersonHead">Uzair Arslan</h2>
-            <p class="teampersonsmallText">Chief tech</p>
-            <p class="pesonTeamAbout">Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when
-            </p>
-          </div>
-
-        </div>
-        <div class="indvidualTeam">
-          <div class="teamImgRelative">
-            <img class="teamPersonImg" src="/images/team.png" alt="">
-          </div>
-          <div class="teampersonText">
-            <h2 class="teampersonHead">Uzair Arslan</h2>
-            <p class="teampersonsmallText">Chief tech</p>
-            <p class="pesonTeamAbout">Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when
-            </p>
-          </div>
-
-        </div>
-        <div class="indvidualTeam">
-          <div class="teamImgRelative">
-            <img class="teamPersonImg" src="/images/team.png" alt="">
-          </div>
-          <div class="teampersonText">
-            <h2 class="teampersonHead">Uzair Arslan</h2>
-            <p class="teampersonsmallText">Chief tech</p>
-            <p class="pesonTeamAbout">Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when
-            </p>
-          </div>
-
+          <% for (let c of teamMembers) { %>
+            <div class="teamImgRelative">
+              <img class="teamPersonImg" src="<%= c.image %>" alt="<%= c.name %>">
+            </div>
+            <div class="teampersonText">
+              <h2 class="teampersonHead"><%= c.name %></h2>
+              <p class="teampersonsmallText"><%= c.jobTitle  %></p>
+              <p class="pesonTeamAbout"><%= c.jobDescription %></p>
+            </div>
+          <% } %>
         </div>
       </div>
       
     <img src="/images/Group 12.png" style="position: absolute; z-index: -9999; width: 90%; right: 0;" alt="">
+    
     </div>
     
   </section>
