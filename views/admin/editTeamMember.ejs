@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Team Member</title>
+</head>
+<body>
+    <h1>Edit Team Member</h1>
+    <form action="/admin/team/edit/<%= teamMember._id %>" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= teamMember.name %>" required>
+        
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" value="<%= teamMember.jobTitle %>" required>
+        
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" name="jobDescription" rows="4" required><%= teamMember.jobDescription %></textarea>
+        
+        <label for="image">Upload Team Member Image (if you want to change it):</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>

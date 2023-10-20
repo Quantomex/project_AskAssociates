@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Case Study</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/OpForm.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Edit Case Study</h1>
+    <form class="caseStudyForm" action="/editCaseStudy/<%= caseStudy._id %>" method="post" enctype="multipart/form-data">
+      <label for="title">Case Study Title</label>
+      <input type="text" class="form-control" id="title" name="title" value="<%= caseStudy.title %>" required>
+  
+      <label for="text">Case Study Text/Description</label>
+      <textarea class="form-control" id="text" name="text" rows="4" required><%= caseStudy.text %></textarea>
+  
+      <label for="image">Upload Case Study Image</label>
+      <input type="file" class="form-control" id="image" name="image" accept="image/*">
+  
+      <label>Select Domain(s)</label>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain1" name="domain" value="Website Designed" <%= caseStudy.domain.includes("Website Designed") ? "checked" : "" %>
+        <label class="form-check-label" for="domain1">Website Designed</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain2" name="domain" value="Apps Developed" <%= caseStudy.domain.includes("Apps Developed") ? "checked" : "" %>
+        <label class="form-check-label" for="domain2">Apps Developed</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain3" name="domain" value="SEO" <%= caseStudy.domain.includes("SEO") ? "checked" : "" %>
+        <label class="form-check-label" for="domain3">SEO</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain4" name="domain" value="Happy Clients" <%= caseStudy.domain.includes("Happy Clients") ? "checked" : "" %>
+        <label class="form-check-label" for="domain4">Happy Clients</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain5" name="domain" value="AI & IOT solutions" <%= caseStudy.domain.includes("AI & IOT solutions") ? "checked" : "" %>
+        <label class="form-check-label" for="domain5">AI & IOT solutions</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain6" name="domain" value="Games Developed" <%= caseStudy.domain.includes("Games Developed") ? "checked" : "" %>
+        <label class="form-check-label" for="domain6">Games Developed</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="domain7" name="domain" value="Data Science projects" <%= caseStudy.domain.includes("Data Science projects") ? "checked" : "" %>
+        <label class="form-check-label" for="domain7">Data Science projects</label>
+      </div>
+      <!-- Add similar checkboxes for other domains here -->
+  
+      <button type="submit" class="btn btn-primary btn_sub bt-cat">Update</button>
+    </form>
+  </div>
+</body>
+</html>

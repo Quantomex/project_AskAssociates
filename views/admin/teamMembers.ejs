@@ -3,7 +3,7 @@
 
 <head>
   <link href="/stylesheets/stylepanel.css" rel="stylesheet" type=" text/css">
-  <title>Case Study</title>
+  <title>Team Members</title>
 
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,11 +35,11 @@
       <div class="col-lg-3 d-none d-lg-block">
         <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
           <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
-            <li><a href="/admin/case-studies" class="nav-item nav-link bg-active ">Case Study</a></li>
+            <li><a href="/admin/case-studies" class="nav-item nav-link">Case Study</a></li>
             <li><a href="/admin/viewquote" class="nav-item nav-link ">Quotations</a></li>
-            <li><a href="/admin/team" class="nav-item nav-link ">Team Members</a></li>
-
-          </div>
+            <li><a href="/admin/team" class="nav-item nav-link bg-active ">Team Members</a></li>
+  
+        </div>
         </nav>
       </div>
       <div class="col-lg-9">
@@ -57,53 +57,28 @@
               <div class="burger-menu-tabs">
                 <li><a href="/admin/case-studies" class="nav-item nav-link">Case Study</a></li>
                 <li><a href="/admin/viewquote" class="nav-item nav-link ">Quotations</a></li>
-                <li><a href="/admin/team" class="nav-item nav-link ">Team Members</a></li>
+                <li><a href="/admin/team" class="nav-item nav-link bg-active ">Team Members</a></li>
+
               </div>
             </div>
           </div>
         </nav>
-        <form class="caseStudyForm" action="/admin/case-study/create" method="post" enctype="multipart/form-data">
-            <label for="title">Case Study Title</label>
-            <input type="text" class="form-control" id="title" name="title" required>
+        <form class="teamMemberForm" action="/admin/team/create" method="post" enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
         
-            <label for="text">Case Study Text/Description</label>
-            <textarea class="form-control" id="text" name="text" rows="4" required></textarea>
+            <label for="jobTitle">Job Title</label>
+            <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
         
-            <label for="image">Upload Case Study Image</label>
+            <label for="jobDescription">Job Description</label>
+            <textarea class="form-control" id="jobDescription" name="jobDescription" rows="4" required></textarea>
+        
+            <label for="image">Upload Team Member Image</label>
             <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
-        
-            <label>Select Domain(s)</label>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="domain1" name="domain" value="Website Designed">
-                <label class="form-check-label" for="domain1">Website Designed</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="domain2" name="domain" value="Apps Developed">
-                <label class="form-check-label" for="domain2">Apps Developed</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="domain3" name="domain" value="SEO">
-                <label class="form-check-label" for="domain3">SEO</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="domain4" name="domain" value="Happy Clients">
-                <label class="form-check-label" for="domain4">Happy Clients</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="domain5" name="domain" value="AI & IOT solutions">
-                <label class="form-check-label" for="domain5">AI & IOT solutions</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class ="form-check-input" id="domain6" name="domain" value="Games Developed">
-                <label class="form-check-label" for="domain6">Games Developed</label>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="domain7" name="domain" value="Data Science projects">
-                <label class="form-check-label" for="domain7">Data Science projects</label>
-            </div>
         
             <button type="submit" class="btn btn-primary btn_sub bt-cat">Submit</button>
         </form>
+        
           
       </div>
     </div>
@@ -112,7 +87,7 @@
   <!-- Page Header Start -->
   <div class="container-fluid bg-secondary mb-0">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 20px">
-      <h1 class="font-weight-semi-bold text-uppercase mb-3">Case Studies</h1>
+      <h1 class="font-weight-semi-bold text-uppercase mb-3">Team Members</h1>
 
     </div>
   </div>
@@ -127,33 +102,32 @@
             </div>
           </div>
           <!-- Product Div Start  -->
-          <% for (let c of caseStudies) { %>
+          <% for (let member of teamMembers) { %>
             <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
-              <div class="card product-item border-0 mb-4">
-                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                  <img class="img-fluid w-100" src="<%= c.image %>" alt="<%= c.title %>">
+                <div class="card product-item border-0 mb-4">
+                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                        <img class="img-fluid w-100" src="<%= member.image %>" alt="<%= member.name %>">
+                    </div>
+                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">
+                            <%= member.name %>
+                        </h6>
+                        <div class="d-flex justify-content-center" style="font-size: 12px; overflow-x: scroll;">
+                            <p><strong>Job Title:</strong> <%= member.jobTitle %></p>
+                            <p><strong>Job Description:</strong> <%= member.jobDescription %></p>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between bg-light border">
+                        <form action="/deleteTeamMember/<%= member._id %>" method="post">
+                            <button type="submit" class="btn btn-sm text-dark p-0"><i class="fas fa-trash trashcolor mr-1"></i>Delete</button>
+                        </form>
+                        <form action="/editTeamMember/<%= member._id %>" method="get">
+                            <button type="submit" class="btn btn-sm text-dark p-0"><i class="fas fa-pen pencolor mr-1 fa-1x"></i>Edit</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                  <h6 class="text-truncate mb-3">
-                    <%= c.title %>
-                  </h6>
-                  <div class="d-flex justify-content-center" style="font-size: 12px; overflow-x: scroll;">
-                    <p><strong>Case Study Title:</strong> <%= c.title %></p>
-                    <p><strong>Case Study Text:</strong> <%= c.text %></p>
-                    <p><strong>Domain:</strong> <%= c.domain.join(', ') %></p>
-                  </div>
-                </div>
-                <div class="card-footer d-flex justify-content-between bg-light border">
-                  <form action="/deleteCaseStudy/<%= c._id %>" method="post">
-                    <button type="submit" class="btn btn-sm text-dark p-0"><i class="fas fa-trash trashcolor mr-1 "></i>Delete</button>
-                  </form>
-                  <form action="/editCaseStudy/<%= c._id %>" method="get">
-                    <button type="submit" class="btn btn-sm text-dark p-0"><i class="fas fa-pen pencolor mr-1 fa-1x"></i>Edit</button>
-                  </form>
-                </div>
-              </div>
             </div>
-          <% } %>
+        <% } %>
         </div>
       </div>
     </div>

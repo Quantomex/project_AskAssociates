@@ -118,6 +118,7 @@ if (process.env.NODE_ENV !== "production") {
   app.use(adminRoutes);
   app.use(caseStudyRoute);
   app.use(formRoute);
+  app.use(teamRoute);
 
   // Listen for the port Number
   app.listen(PORT, () => {
