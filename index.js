@@ -6,6 +6,8 @@ if (process.env.NODE_ENV !== "production") {
   require('./models/caseStudyModel');
   require('./models/FormEntry');
   require('./models/teamModel');
+  require('./models/clientReviewModel');
+
   const express = require("express");
   const MongoDBStore = require("connect-mongo");
   const mongoose = require("mongoose");
@@ -28,7 +30,7 @@ if (process.env.NODE_ENV !== "production") {
   const caseStudyRoute = require('./routes/caseStudyRoute');
   const formRoute = require('./routes/getQuoteRoute');
   const teamRoute = require('./routes/teamRoute');
-
+  const clientReviewRoute = require('./routes/clientReviewRoute');
   const store = new MongoDBStore({
     mongoUrl: mongoURi,
     secret,
@@ -119,7 +121,7 @@ if (process.env.NODE_ENV !== "production") {
   app.use(caseStudyRoute);
   app.use(formRoute);
   app.use(teamRoute);
-
+  app.use(clientReviewRoute);
   // Listen for the port Number
   app.listen(PORT, () => {
       console.log(`App is listening on http://localhost:${PORT}`);
