@@ -33,6 +33,9 @@
     display: flex !important;
     background: transparent;
 }
+.dn{
+  display: none;
+}
     </style>
     
     <%- include('../partials/body.ejs') %>
@@ -806,14 +809,14 @@
 <p class="faqP">FAQ</p>
 <h2 class="faqH">Frequently Asked Questions</h2>
 <div class="quickfaq">
-  <% for (let f of FAQs) { %>
+  <% for (let i = 0; i < FAQs.length; i++) { %>
     <p class="quickFaqQuick"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
       <circle cx="7" cy="7" r="7" fill="#49A16D"/>
-    </svg>  <%=f.question %> <svg class="svgPlus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+    </svg>    <%= FAQs[i].question %> <svg class="svgPlus" xmlns="http://www.w3.org/2000/svg" onclick="showanswer(<%= i %>)" width="20" height="20" viewBox="0 0 20 20" fill="none">
       <rect x="8" width="4" height="20" rx="2" fill="#49A16D"/>
       <rect y="12" width="4" height="20" rx="2" transform="rotate(-90 0 12)" fill="#49A16D"/>
     </svg></p>
-    <p><%=f.answer %> </p>
+    <p class="dn" id="answerid_<%= i %>"><%= FAQs[i].answer %> </p>
     <% } %>
 
  
@@ -866,5 +869,14 @@
         el: ".swiper-pagination",
       },
     });
+    function showanswer(i) {
+  let v = document.getElementById("answerid_" + i);
+  if (v.style.display === "block") {
+    v.style.display = "none";
+  } else {
+    v.style.display = "block";
+  }
+}
+
   </script>
    <%- include('../partials/footer.ejs') %>

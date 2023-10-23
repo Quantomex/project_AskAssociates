@@ -12,7 +12,7 @@ const {isAdmin} = require('../middleware/isAdmin');
 // Admin Signup
 router.get('/admin/signup', (req, res) => {
   res.render('./admin/adminSignup');
-});git
+});
 router.get('/', async (req , res) => {
   const test = await Test.find();
   const blogs = await Blog.find();
