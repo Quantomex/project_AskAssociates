@@ -25,7 +25,7 @@ var bodyParser = require("body-parser");
 const Admin = mongoose.model('Admin')
 const app = express();
 const PORT = 3000;
-const mongoURi = "mongodb://0.0.0.0:27017/askassociates";
+const mongoURi = process.env.MONGO_URI || 'mongodb+srv://askassociates:Salmangz1@cluster0.fsm9zvf.mongodb.net/?retryWrites=true&w=majority';
 const secret = "hehehaha";
 
 // Routes will go here

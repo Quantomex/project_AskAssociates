@@ -223,78 +223,28 @@
   <h2 class="rHM">Testimonials</h2>
   <div class="swiper mySwiper" style="background: rgba(73, 161, 109, 0.05)">
     <div class="swiper-wrapper">
+      <% for (let t of test) { %>
       <div class="swiper-slide h-400">
         <div
           class="whitediv">
           <div
             class="greendiv">
-            <img  class="imgeclient" src=" /images/client.png" alt="">
-            <p class="clientname">Tabish waheed</p>
-            <p class="clientcustomer">Customer</p>
+            <img  class="imgeclient" src="<%= t.image %>" alt="">
+            <p class="clientname"><%= t.name %></p>
+            <p class="clientcustomer"><%= t.title %></p>
           </div>
           <div
             class="clienttextdiv">
-            <p>“Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.”</p>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
+            <p>“<%= t.description %>”</p>
+            <% for (let i = 0; i < t.rating; i++) { %>
+              <i class="fas fa-star stars"></i>
+            <% } %>
+           
           </div>
         </div>
       </div>
-      <div class="swiper-slide h-400">
-        <div
-          class="whitediv">
-          <div
-            class="greendiv">
-            <img  class="imgeclient" src=" /images/client.png" alt="">
-            <p class="clientname">Tabish waheed</p>
-            <p class="clientcustomer">Customer</p>
-          </div>
-          <div
-            class="clienttextdiv">
-            <p>“Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.”</p>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide h-400">
-        <div
-          class="whitediv">
-          <div
-            class="greendiv">
-            <img  class="imgeclient" src=" /images/client.png" alt="">
-            <p class="clientname">Tabish waheed</p>
-            <p class="clientcustomer">Customer</p>
-          </div>
-          <div
-            class="clienttextdiv">
-            <p>“Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.”</p>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-            <i class="fas fa-star stars"></i>
-          </div>
-        </div>
-      </div>
+      <% } %>
+   
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -896,15 +846,17 @@
       </div>
       <div class="mainDataDivEnclosed padd">
    
-    
+        <% for (let b of blogs) { %>
+
         <div class="dataDivContainer">
-          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
+          <img class="imgContainer" src="<%= b.image %>" alt="">
           <div class="headingdataDiv">
-            <h2>Paye Modernisation</h2>
+            <h2><%= b.title %></h2>
           </div>
-          <p class="textgdataDiv">PAYE Modernisation is the modification of the current Pay As You Earn (PAYE) system. It simply means every time a business runs a payroll, they will be required to submit their pay, tax and other</p>
+          <p class="textgdataDiv"><%= b.data %></p>
           <div class="bottomdataDiv">
-            <h2>12 sep,2023</h2>
+            <h2><%= new Date(b.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) %></h2>
+
             <a href="" target="_blank">
             <h3>Read more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <path d="M9 0L7.41375 1.58625L13.6912 7.875H0V10.125H13.6912L7.41375 16.4137L9 18L18 9L9 0Z"
@@ -912,51 +864,8 @@
               </svg></h3> </a>
           </div>
         </div>
-        <div class="dataDivContainer">
-          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
-          <div class="headingdataDiv">
-            <h2>Paye Modernisation</h2>
-          </div>
-          <p class="textgdataDiv">PAYE Modernisation is the modification of the current Pay As You Earn (PAYE) system. It simply means every time a business runs a payroll, they will be required to submit their pay, tax and other</p>
-          <div class="bottomdataDiv">
-            <h2>12 sep,2023</h2>
-            <a href="" target="_blank">
-            <h3>Read more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 0L7.41375 1.58625L13.6912 7.875H0V10.125H13.6912L7.41375 16.4137L9 18L18 9L9 0Z"
-                  fill="#49A16D" />
-              </svg></h3> </a>
-          </div>
-        </div>
-        <div class="dataDivContainer">
-          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
-          <div class="headingdataDiv">
-            <h2>Paye Modernisation</h2>
-          </div>
-          <p class="textgdataDiv">PAYE Modernisation is the modification of the current Pay As You Earn (PAYE) system. It simply means every time a business runs a payroll, they will be required to submit their pay, tax and other</p>
-          <div class="bottomdataDiv">
-            <h2>12 sep,2023</h2>
-            <a href="" target="_blank">
-            <h3>Read more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 0L7.41375 1.58625L13.6912 7.875H0V10.125H13.6912L7.41375 16.4137L9 18L18 9L9 0Z"
-                  fill="#49A16D" />
-              </svg></h3> </a>
-          </div>
-        </div>
-        <div class="dataDivContainer">
-          <img class="imgContainer" src=" /images/Rectangle 93.png" alt="">
-          <div class="headingdataDiv">
-            <h2>Paye Modernisation</h2>
-          </div>
-          <p class="textgdataDiv">PAYE Modernisation is the modification of the current Pay As You Earn (PAYE) system. It simply means every time a business runs a payroll, they will be required to submit their pay, tax and other</p>
-          <div class="bottomdataDiv">
-            <h2>12 sep,2023</h2>
-            <a href="" target="_blank">
-            <h3>Read more <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 0L7.41375 1.58625L13.6912 7.875H0V10.125H13.6912L7.41375 16.4137L9 18L18 9L9 0Z"
-                  fill="#49A16D" />
-              </svg></h3> </a>
-          </div>
-        </div>
+        <% } %>
+     
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->

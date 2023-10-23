@@ -768,3 +768,21 @@ line-height: normal;
 .searchAndSelect{
   padding: 20px 0;
 }
+@media (max-width:643px) {
+  .clienttextdiv {
+     margin-top: 170px;
+     margin-left: auto !important;
+     margin-right: auto;
+     float: none;
+  }
+  .whitediv{
+      height: auto !important;
+  }
+  .h-400 {
+      height: 577px !important;
+     
+  }
+  .greendiv{
+    transform: translateX(70%);
+}
+}

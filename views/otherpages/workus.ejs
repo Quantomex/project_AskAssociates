@@ -25,7 +25,7 @@
 </div>
   <div class="hireDropAndText">
     <div><h2 class="hireHeading">We are hiring</h2></div>
-    <div class="dropdownColumn">
+    <!-- <div class="dropdownColumn">
         <div class="custom-dropdown">
             <p>Job family <i class="fa fa-chevron-down noiam" style=" float: right;" aria-hidden="true"></i></p>
             <ul class="dropdown-options">
@@ -41,49 +41,26 @@
             </ul>
         </div>
        
-    </div>
+    </div> -->
   </div>
   <div class="jobBox">
+    <% for (let j of jobs) { %>
+
+    <div class="jobIndvidual">
+        <h4 class="jobTitle"><img class="imgISH marginRight" src="<%= j.image %>" alt="">
+            <%= j.jobTitle %></h4>
+            <p class="jobText"><%= j.jobDescription %></p>
+            <div class="bottomJob">
+            <p class="postDetailJob"><%= new Date(j.datePosted).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) %></p>
+           <div class="jobButton">
+                        <a href=""><p class="serviceButton">Read More</p></a>
+                        <a href=""><p class="serviceButton spec">Read More</p></a>
+                    </div>
+        </div>
+
+    </div>
+    <% }%>
    
-    <div class="jobIndvidual">
-        <h4 class="jobTitle"><img class="imgISH marginRight" src="/images/askASwevices.svg" alt="">
-            Job title        </h4>
-            <p class="jobText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the. lorem50</p>
-            <div class="bottomJob">
-            <p class="postDetailJob">Posted on: 27 Sep,2021   </p>
-           <div class="jobButton">
-                        <a href=""><p class="serviceButton">Read More</p></a>
-                        <a href=""><p class="serviceButton spec">Read More</p></a>
-                    </div>
-        </div>
-
-    </div>
-    <div class="jobIndvidual">
-        <h4 class="jobTitle"><img class="imgISH marginRight" src="/images/askASwevices.svg" alt="">
-            Job title        </h4>
-            <p class="jobText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
-            <div class="bottomJob">
-            <p class="postDetailJob">Posted on: 27 Sep,2021   </p>
-           <div class="jobButton">
-                        <a href=""><p class="serviceButton">Read More</p></a>
-                        <a href=""><p class="serviceButton spec">Read More</p></a>
-                    </div>
-        </div>
-
-    </div>
-    <div class="jobIndvidual">
-        <h4 class="jobTitle"><img class="imgISH marginRight" src="/images/askASwevices.svg" alt="">
-            Job title        </h4>
-            <p class="jobText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
-            <div class="bottomJob">
-            <p class="postDetailJob">Posted on: 27 Sep,2021   </p>
-           <div class="jobButton">
-                        <a href=""><p class="serviceButton">Read More</p></a>
-                        <a href=""><p class="serviceButton spec">Read More</p></a>
-                    </div>
-        </div>
-
-    </div>
 
   </div>
   <script>

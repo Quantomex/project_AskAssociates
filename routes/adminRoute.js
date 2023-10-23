@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const Admin = require('../models/Admin');
+const Test = require('../models/testModel');
+const Blog = require('../models/blogModel');
+const Job = require('../models/jobsModel');
+
 
 const {isAdmin} = require('../middleware/isAdmin');
 // Admin Signup
@@ -9,8 +13,10 @@ router.get('/admin/signup', (req, res) => {
   res.render('./admin/adminSignup');
 });
 router.get('/', async (req , res) => {
-  res.render('./otherpages/home');
-})
+  const test = await Test.find();
+  const blogs = await Blog.find();
+  res.render('./otherpages/home', {test,blogs});
+});
 router.post('/admin/signup', async (req, res, next) => {
   const { username, password } = req.body;
   
@@ -55,6 +61,8 @@ router.get('/aboutus', async (req , res) => {
 });
 ;
 router.get('/openposition', async (req , res) => {
-  res.render('./otherpages/workus');
+  const jobs = await Job.find();
+
+  res.render('./otherpages/workus',{jobs});
 });
 module.exports = router;
